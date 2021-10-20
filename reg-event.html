@@ -4,17 +4,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="UTF-8">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/form.css">
   <title>Mainpage</title>
 </head>
 <body>
-  <form id="main">
-
-  </form>
+  <div id="main">
+    <form action="#">
+      <label for="eventname"> Name of event
+        <input id="eventname" type="text">
+      </label>
+      <label for="type"> Type of event
+        <input type="text" id="type">
+      </label>
+      <label for="org"> Organizer
+        <input type="text" id="org">
+      </label>
+      <label> Alcoholic
+        <input type="radio" name="alcohol" value="yes">
+        Non Alcoholic
+        <input type="radio" name="alcohol" value="no">
+      </label>
+      <label for="date"> Date
+        <input type="date" id="date">
+      </label>
+      <label for="capacity">Capacity
+        <input type="number" id="capacity">
+      </label>
+      <button type="submit" id="btn">Create event</button>
+    </form>
+  </div>
   <nav>
     <ul><img src="icons/settings.png"><br>Settings</ul> <!-- fix setings icon -->
-    <ul><img src="icons/explore.png"><br>Explore</ul>
+    <ul onclick="location.href='mainpage.html'"><img src="icons/explore.png"><br>Explore</ul> <!-- måte legge på onclick for å få gjort liste elemtet tl å fungere som liste -->
     <ul><img src="icons/calender.png"><br>Calender</ul>
     <ul><img src="icons/profile.png"><br>Profile</ul>
   </nav>
+  <script>
+
+      const form = document.querySelector('form');
+      form.addEventListener('submit', handleSubmit);
+
+      function handleSubmit() {
+        let eventname = document.getElementById("eventname").value;
+        let type = document.getElementById("type").value;
+        let org = document.getElementById("org").value;
+        let date = document.getElementById("date").value;
+        let cap = document.getElementById("capacity").value;
+        let event = {name:eventname, type:type, organizer:org, date:date, cap:cap};
+       console.log(event);
+      }
+  </script>
 </body>
 </html>
