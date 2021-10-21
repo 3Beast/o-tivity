@@ -14,8 +14,8 @@ body {
 }
 
 .event {        /* placeholder */
-    height: 400px;
-    width: 200px;
+    height: 150px;
+    width: 250px;
     border: solid 2px black;
     display: inline-block;
     border-radius: 25px;
@@ -62,6 +62,29 @@ ul img {
 }
 
 
+#mapicon{                             /*gjør navbar knappene til sirkler og styler dem*/
+    border: solid 1px black; /*fjernes når alt er ok*/
+    text-align: center;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    font-size: 0.8em;
+    position: absolute;
+    bottom: 55px;
+    left: calc(50% - 26px);
+}
+
+#mapicon:hover {
+    background-color: #74ae96;
+}
+
+#mapicon:active { /* bør finne annen måte å vise at du klikker på knappen*/
+    background-color: #74ae96;
+    box-shadow: 2px 2px black;
+}
 #header {
     position: relative;
     text-align: center;
