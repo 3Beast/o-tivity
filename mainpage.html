@@ -23,13 +23,12 @@
         let newEvent = JSON.parse(window.localStorage.getItem("event"));
 
 
-        function addEvent(newEvent){
-
-            let kris = newEvent
-            main.innerHTML += '<div class="event">  </div>';
-        }
-
         if (localStorage.length > 0){
+            function addEvent(){
+                let objEvent = newEvent.name;
+                main.innerHTML += `<div class="event"> ${objEvent}  </div>`;
+
+            }
             addEvent(newEvent);
         } else {
             console.log("else");
