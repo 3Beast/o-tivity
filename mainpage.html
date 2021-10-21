@@ -7,7 +7,7 @@
     <title>Mainpage</title>
 </head>
 <body>
-    <div id="main">
+    <div id="main" class="add">
         <div class="event">Gaming</div>
         <div class="event">Volleyball</div>
         <div class="event">Forsj</div>
@@ -18,5 +18,22 @@
         <ul><img src="icons/calender.png"><br>Calender</ul>
         <ul><img src="icons/profile.png"><br>Profile</ul>
     </nav>
+    <script>
+        let main = document.getElementById("main")
+        let newEvent = JSON.parse(window.localStorage.getItem("event"));
+
+
+        function addEvent(newEvent){
+
+            let kris = newEvent
+            main.innerHTML += '<div class="event">  </div>';
+        }
+
+        if (localStorage.length > 0){
+            addEvent(newEvent);
+        } else {
+            console.log("else");
+        }
+    </script>
 </body>
 </html>

@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/form.css">
+  <script src="js/reg-event.js"></script>
   <title>Mainpage</title>
 </head>
 <body>
@@ -40,19 +41,7 @@
     <ul><img src="icons/profile.png"><br>Profile</ul>
   </nav>
   <script>
-
-      const form = document.querySelector('form');
-      form.addEventListener('submit', handleSubmit);
-
-      function handleSubmit() {
-        let eventname = document.getElementById("eventname").value;
-        let type = document.getElementById("type").value;
-        let org = document.getElementById("org").value;
-        let date = document.getElementById("date").value;
-        let cap = document.getElementById("capacity").value;
-        let event = {name:eventname, type:type, organizer:org, date:date, cap:cap};
-       console.log(event);
-      }
+      setup();
   </script>
 </body>
 </html>
