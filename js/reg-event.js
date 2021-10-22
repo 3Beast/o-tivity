@@ -9,10 +9,8 @@ function setup(){
     let inpDate = document.getElementById("date");
     let inpCap = document.getElementById("capacity");
 
-    function handleSubmit(e) {
-        e.preventDefault();
+    function handleSubmit() {
 
-        console.log("123");
        let evname = inpEvname.value;
         let type = inpType.value;
         let org = inpOrg.value;
