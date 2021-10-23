@@ -12,28 +12,43 @@
         <p>Activities near your area</p>
         <div class="event">
             <div class="bilde">
-                <img src="icons/Gaming til O-tivity.png" width="250px" height="75px">
+                <img src="icons/gaming.png" width="100%" height="75px">
             </div>
             <div class="info">
-                <p class="leftp"> Activity: Gamingnight <br> Organizer: The InTelectuals<br> Address: Gimlegate 48B <br> Date & Time: 23.05.22 - 19:45  </p>
+                <p> Activity: Gamingnight <br>
+                    Organizer: The InTelectuals<br>
+                    Address: Gimlegate 48B <br>
+                    Date & Time: 23.05.22 - 19:45 <br>
+                    Alcohol: No <br>
+                    Capacity: 10  </p>
             </div>
         </div>
         <div class="event">
             <div class="bilde">
-                <img src="icons/Fest til O-tivity.png"width="250px" height="75px">
+                <img src="icons/feast.png"width="100%" height="75px">
             </div>
             <div class="info">
-                <p class="leftp"> Fotball <br> sport <br> gøy </p>
-                <p class="rightp"> Alkohol <br> time <br> date </p>
+                    <p>
+                        Activity: Consert <br>
+                        Organizer: Spartacus<br>
+                        Address: Fosnaveien 102 <br>
+                        Date & Time: 13.05.22 - 18:00 <br>
+                        Alcohol: yes <br>
+                        Capacity: 10</p>
             </div>
         </div>
         <div class="event">
             <div class="bilde">
-                <img src="icons/Volleyball til O-tivity.png"width="250px" height="75px">
+                <img src="icons/sport.png"width="100%" height="75px">
             </div>
             <div class="info">
-                <p class="leftp"> Volleyball <br> sport <br> gøy </p>
-                <p class="rightp"> Alkohol <br> time <br> date </p>
+                <p></p>
+                Activity: Volleyball <br>
+                Organizer: Pizzacus<br>
+                Address: Bystranda <br>
+                Date & Time: 30.05.22 - 15:00 <br>
+                Alcohol: No <br>
+                Capacity: 10 </p>
             </div>
         </div>
     </div>
@@ -62,9 +77,14 @@
                 let evTime = newEvent.time;
                 let evDate = newEvent.date;
                 let evAdr = newEvent.adr;
-                main.innerHTML += `<div class="event"> ${evName}
-
-                </div>`; //setter value som info til det nye eventet
+                main.innerHTML += `<div class="event">
+            <div class="bilde">
+                <img src="icons/${evType}.png" width="100%" height="75px">
+            </div>
+            <div class="info">
+                <p class="leftp"> Activity: ${evName} <br> Organizer: ${evOrg}<br> Address: ${evAdr} <br> Date & Time: ${evDate} - ${evTime} <br> Alcohol: ${evAlc} <br> Capacity: ${evCap}  </p>
+            </div>
+        </div>`; //setter value som info til det nye event
             }
             addEvent(newEvent);
         }
