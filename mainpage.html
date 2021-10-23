@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
     <title>Mainpage</title>
 </head>
 <body>
@@ -47,5 +48,27 @@
         <ul><img src="icons/calender.png"><br>Calender</ul>
         <ul><img src="icons/profile.png"><br>Profile</ul>
     </nav>
+    <script>
+        let main = document.getElementById("main")
+        let newEvent = JSON.parse(window.localStorage.getItem("event")); //Gjør string fra localStorage om til objekt
+
+        if (localStorage.length > 0){ //hvis localstorage har innhold start funksjon addEvent
+            function addEvent(){
+                let evName = newEvent.name;//henter value ifra objekt
+                let evType = newEvent.type;
+                let evOrg = newEvent.org;
+                let evAlc = newEvent.alc;
+                let evCap = newEvent.cap;
+                let evTime = newEvent.time;
+                let evDate = newEvent.date;
+                let evAdr = newEvent.adr;
+                main.innerHTML += `<div class="event"> ${evName}
+
+                </div>`; //setter value som info til det nye eventet
+            }
+            addEvent(newEvent);
+        }
+    </script>
 </body>
 </html>
+
