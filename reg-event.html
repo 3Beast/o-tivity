@@ -6,7 +6,6 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/form.css">
   <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
-  <script src="js/reg-event.js"></script>
   <title>Mainpage</title>
 </head>
 <body>
@@ -21,13 +20,20 @@
       <label for="org"> Organizer
         <input type="text" id="org">
       </label>
-      <label> Alcoholic
-        <input type="radio" name="alcohol" value="yes">
-        Non Alcoholic
-        <input type="radio" name="alcohol" value="no">
-      </label>
+      <label> Alcoholic Involved
+        <select id="alcohol">
+          <option value="No">No</option>
+          <option value="Yes">Yes</option>
+        </select><br>
+      </label> <br>
+      <label for="time"> Time<br>
+        <input type="time" id="time">
+      </label><br>
       <label for="date"> Date
         <input type="date" id="date">
+      </label>
+      <label for="adr">Address
+        <input type="text" id="adr">
       </label>
       <label for="capacity">Capacity
         <input type="number" id="capacity">
@@ -42,7 +48,33 @@
     <ul><img src="icons/profile.png"><br>Profile</ul>
   </nav>
   <script>
-      setup();
+      let btnSubmit = document.getElementById("btn");
+      btnSubmit.addEventListener("click", handleSubmit); //sier at ved click skal button kjøre funksjon handle submit
+
+      let inpEvname = document.getElementById("eventname"); // kobler input elementene til JS
+      let inpType = document.getElementById("type");
+      let inpOrg = document.getElementById("org");
+      let inpAlc = document.getElementById("alcohol");
+      let inpDate = document.getElementById("date");
+      let inpCap = document.getElementById("capacity");
+      let inpTime = document.getElementById("time");
+      let inpAdr = document.getElementById("adr");
+
+      function handleSubmit() {
+
+
+        let evname = inpEvname.value; //henter verdi ifra input elemntene
+        let type = inpType.value;
+        let org = inpOrg.value;
+        let alc = inpAlc.value;
+        let time = inpTime.value;
+        let date = inpDate.value;
+        let adr = inpAdr.value;
+        let cap = inpCap.value;
+        let event = {name:evname, type:type, org:org, date:date, cap:cap, adr:adr, alc:alc, time:time}; // legger verdiene inn i et objekt
+
+        window.localStorage.setItem('event', JSON.stringify(event)); //lagrer objektet som string i local storage
+      }
   </script>
 </body>
 </html>

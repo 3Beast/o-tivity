@@ -2,7 +2,7 @@
 form {
     width:200px;
     padding:20px;
-    height: 600px;
+    height: max-content;
     margin: auto;
     margin-top: 15%;
     margin-bottom: 15%;
