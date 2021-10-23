@@ -14,7 +14,7 @@ body {
 }
 
 .event {        /* placeholder */
-    height: 150px;
+    height: max-content;
     width: 250px;
     border: solid 2px black;
     display: inline-block;
