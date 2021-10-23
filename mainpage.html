@@ -8,11 +8,40 @@
     <title>Mainpage</title>
 </head>
 <body>
-    <div id="main" class="add">
-        <div class="event">Gaming</div>
-        <div class="event">Volleyball</div>
-        <div class="event">Forsj</div>
+    <div id="main">
+        <p>Activities near your area</p>
+        <div class="event">
+            <div class="bilde">
+                <img src="icons/Gaming til O-tivity.png" width="250px" height="75px">
+            </div>
+            <div class="info">
+                <p class="leftp"> Activity: Gamingnight <br> Organizer: The InTelectuals<br> Address: Gimlegate 48B <br> Date & Time: 23.05.22 - 19:45  </p>
+            </div>
+        </div>
+        <div class="event">
+            <div class="bilde">
+                <img src="icons/Fest til O-tivity.png"width="250px" height="75px">
+            </div>
+            <div class="info">
+                <p class="leftp"> Fotball <br> sport <br> gøy </p>
+                <p class="rightp"> Alkohol <br> time <br> date </p>
+            </div>
+        </div>
+        <div class="event">
+            <div class="bilde">
+                <img src="icons/Volleyball til O-tivity.png"width="250px" height="75px">
+            </div>
+            <div class="info">
+                <p class="leftp"> Volleyball <br> sport <br> gøy </p>
+                <p class="rightp"> Alkohol <br> time <br> date </p>
+            </div>
+        </div>
     </div>
+    <div id="header">
+        <input id="search" type="text" placeholder="Search for an activity...">
+        <button onclick="location.href=`reg-event.html`">+</button>
+    </div>
+    <img id="mapicon" src="icons/map.png">
     <nav>
         <ul><img src="icons/settings.png"><br>Settings</ul> <!-- fix setings icon -->
         <ul><img src="icons/explore.png"><br>Explore</ul>
