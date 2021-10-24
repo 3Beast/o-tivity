@@ -37,9 +37,9 @@
         <input type="time" id="time">
       </label><br>
       <label for="adr">Address <br>
-        <input type="textarea" placeholder="Street name + number" id="adr">
-        <input type="number" placeholder="post code" min="4" max="4" id="adr">
-        <input type="textarea" placeholder="City/town" id="adr">
+        <input type="text" placeholder="Street name + number" id="adr">
+        <input type="number" placeholder="Postcode" min="4" max="4" id="adr2">
+        <input type="text" placeholder="City/town" id="adr3">
       </label>
       <br> <label for="capacity">Event capacity
        <br> <input type="number" min="1" id="capacity">
@@ -69,6 +69,8 @@
       let inpCap = document.getElementById("capacity");
       let inpTime = document.getElementById("time");
       let inpAdr = document.getElementById("adr");
+      let inpAdr2 = document.getElementById("adr2");
+      let inpAdr3 = document.getElementById("adr3");
 
       function handleSubmit() {
 
@@ -80,8 +82,10 @@
         let time = inpTime.value;
         let date = inpDate.value;
         let adr = inpAdr.value;
+        let adr2 = inpAdr2.value;
+        let adr3 = inpAdr3.value;
         let cap = inpCap.value;
-        let event = {name:evname, type:type, org:org, date:date, cap:cap, adr:adr, alc:alc, time:time}; // legger verdiene inn i et objekt
+        let event = {name:evname, type:type, org:org, date:date, cap:cap, adr:adr, adr2:adr2, adr3:adr3, alc:alc, time:time}; // legger verdiene inn i et objekt
 
         window.localStorage.setItem('event', JSON.stringify(event)); //lagrer objektet som string i local storage
       }

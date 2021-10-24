@@ -15,8 +15,6 @@
     margin-top: 20px;
 }
 
-.adr {
-}
 
 form {
     width:300px;
@@ -35,7 +33,7 @@ form {
 }
 
 input {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     border: aquamarine;
     border-radius: 5px;
 
@@ -48,9 +46,6 @@ input {
     height: 60px;
 }
 
-#eventname {
-
-}
 
 .btn {
     background-color: azure;
@@ -60,6 +55,3 @@ input {
 
 }
 
-#capacity {
-
-}
