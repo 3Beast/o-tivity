@@ -16,11 +16,16 @@
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_22_10_2021_10_21__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_22_10_2021_10_21__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_22_10_2021_11_43__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_22_10_2021_11_43__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+
+      <change beforePath="$PROJECT_DIR$/css/form.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/form.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/reg-event.html" beforeDir="false" afterPath="$PROJECT_DIR$/reg-event.html" afterDir="false" />
+
       <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/icons/Fest til O-tivity.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/icons/Gaming til O-tivity.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/icons/Volleyball til O-tivity.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/mainpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/mainpage.html" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,6 +99,7 @@
       <workItem from="1634556571389" duration="2129000" />
       <workItem from="1634638800837" duration="3930000" />
       <workItem from="1634649791062" duration="1920000" />
+      <workItem from="1635026488733" duration="10339000" />
       <workItem from="1634996441769" duration="661000" />
     </task>
     <task id="LOCAL−00001" summary="fikset litt på CSSen, lagt til border, border-radius, endret margins, etc. Fortsetter senere, ikke ferdig. - HL">
@@ -102,7 +108,13 @@
       <option name="presentableId" value="LOCAL−00001" />
       <updated>1634827546419</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL−00002" summary="Lagt inn kart-knappen (må fikse), endret fonter, lagt inn minimum-input på kapasitet (så man ikke kan legge inn antall under 0 som kapasitet), endret på input for addresse, lagt til header, etc. Ikke helt ferdig/fornøyd, med har hatt problemer med branchene så legger ut det som er - HL">
+      <created>1635074535323</created>
+      <option name="number" value="LOCAL−00002" />
+      <option name="presentableId" value="LOCAL−00002" />
+      <updated>1635074535323</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -124,6 +136,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="fikset litt på CSSen, lagt til border, border-radius, endret margins, etc. Fortsetter senere, ikke ferdig. - HL" />
     <MESSAGE value="Lagt inn searchbar." />
-    <option name="LAST_COMMIT_MESSAGE" value="Lagt inn searchbar." />
+    <MESSAGE value="Lagt inn kart-knappen (må fikse), endret fonter, lagt inn minimum-input på kapasitet (så man ikke kan legge inn antall under 0 som kapasitet), endret på input for addresse, lagt til header, etc. Ikke helt ferdig/fornøyd, med har hatt problemer med branchene så legger ut det som er - HL" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lagt inn kart-knappen (må fikse), endret fonter, lagt inn minimum-input på kapasitet (så man ikke kan legge inn antall under 0 som kapasitet), endret på input for addresse, lagt til header, etc. Ikke helt ferdig/fornøyd, med har hatt problemer med branchene så legger ut det som er - HL" />
   </component>
 </project>
