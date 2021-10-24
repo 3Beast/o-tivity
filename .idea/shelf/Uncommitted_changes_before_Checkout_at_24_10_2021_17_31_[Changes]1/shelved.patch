@@ -1,0 +1,19 @@
+Index: css/form.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>\r\nform {\r\n    width:200px;\r\n    padding:20px;\r\n    height: 600px;\r\n    margin: auto;\r\n    margin-top: 15%;\r\n    margin-bottom: 15%;\r\n    background-color: #6CE0B0;\r\n    box-sizing: border-box;\r\n    border: aqua;\r\n    border-radius: 10px;\r\n\r\n}\r\n\r\ninput {\r\n    margin-bottom: 50px;\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/css/form.css b/css/form.css
+--- a/css/form.css	
++++ b/css/form.css	
+@@ -4,8 +4,6 @@
+     padding:20px;
+     height: 600px;
+     margin: auto;
+-    margin-top: 15%;
+-    margin-bottom: 15%;
+     background-color: #6CE0B0;
+     box-sizing: border-box;
+     border: aqua;
