@@ -17,11 +17,12 @@ body {
 .event {
     height: max-content;
     width: 300px;
-    border: solid 2px black;
+    border: solid 2px darkgreen;
     display: inline-block;
     border-radius: 25px;
     padding: 0px;
-    margin-top: 0.5em
+    margin-top: 0.5em;
+    box-shadow: 2px 2px darkgreen;
 }
 p {
     margin-top: 1.8em;
@@ -54,7 +55,8 @@ ul:hover {
 
 ul:active {                 /* bør finne annen måte å vise at du klikker på knappen*/
     background-color: #74ae96;
-    box-shadow=inset 2px black;opacity:40%;
+    box-shadow: inset 2px 2px black;
+    opacity:40%;
 }
 
 ul:active{/*børfinneannenmåteåviseatduklikkerpåknappen*/
@@ -88,7 +90,8 @@ ul img {
 
 #mapicon:active { /* bør finne annen måte å vise at du klikker på knappen*/
     background-color: #74ae96;
-    box-shadow=inset 2px black; opacity:40%;
+    box-shadow: inset 2px 2px black;
+    opacity:40%;
 }
 
 #header {

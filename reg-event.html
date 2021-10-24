@@ -38,7 +38,7 @@
       </label><br>
       <label for="adr">Address <br>
         <input type="text" placeholder="Street name + number" id="adr">
-        <input type="number" placeholder="Postcode" min="4" max="4" id="adr2">
+        <input type="number" placeholder="Postcode" min="1000" max="9999" id="adr2">
         <input type="text" placeholder="City/town" id="adr3">
       </label>
       <br> <label for="capacity">Event capacity
@@ -85,7 +85,8 @@
         let adr2 = inpAdr2.value;
         let adr3 = inpAdr3.value;
         let cap = inpCap.value;
-        let event = {name:evname, type:type, org:org, date:date, cap:cap, adr:adr, adr2:adr2, adr3:adr3, alc:alc, time:time}; // legger verdiene inn i et objekt
+        let event = {name:evname, type:type, org:org, date:date,
+          cap:cap, adr:adr, adr2:adr2, adr3:adr3, alc:alc, time:time}; // legger verdiene inn i et objekt
 
         window.localStorage.setItem('event', JSON.stringify(event)); //lagrer objektet som string i local storage
       }
