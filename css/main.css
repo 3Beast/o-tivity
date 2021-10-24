@@ -14,9 +14,9 @@ body {
     text-align: center;
 }
 
-.event {        /* placeholder */
+.event {
     height: max-content;
-    width: 250px;
+    width: 300px;
     border: solid 2px black;
     display: inline-block;
     border-radius: 25px;
@@ -109,16 +109,18 @@ ul img {
 .info {
     width: 100%;
     position:relative;
-    height: 73px;
+    height: max-content;
     margin: 0;
     text-align: left;
     list-style: none;
+    padding-top: 5px;
+    font-size: 1.2em;
 }
 .info p{
     display: inline-block;
     margin: 0;
 }
-.leftp {
+p {
     padding-left: 5px;
 }
 .rightp {
