@@ -1,0 +1,49 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    background-image: url("../icons/homescreen.png");
+    width: 100%;
+    height: calc(100%);
+    position: absolute;
+    top: 0;
+    overflow: auto;
+    text-align: center;
+}
+
+.boxopacity {
+    opacity: 0.5;
+    width:375px;
+    height:812px;
+    background: linear-gradient(to bottom, #96f8f7 , #6CE0B0) ;
+}
+
+#slogan {
+    position: absolute;
+    top: 100px;
+}
+
+#otivityicon {
+    position: absolute;
+    top: 250px;
+    left: calc(50% - 125px);
+}
+
+#login {
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 1ex;
+    position: absolute;
+    bottom: 150px;
+    left: calc(50% - 55px);
+}
+
+#regorg {
+    text-align: center;
+    display: inline-block;
+    position: absolute;
+    bottom: 125px;
+    left: calc(50% - 80px);
+}

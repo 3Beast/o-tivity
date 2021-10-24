@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+
+    <list default="true" id="fec88d16-bb83-465e-980c-785955065668" name="Changes" comment="lagt til logg inn og registrer org buttons.også lagt til logo, og slogan. alt er skalert etter iphone x">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
+
     <list default="true" id="fec88d16-bb83-465e-980c-785955065668" name="Changes" comment="" />
+
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,8 +65,13 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Gruppe-3B" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -91,7 +104,18 @@
       <option name="presentableId" value="LOCAL−00002" />
       <updated>1635074535323</updated>
     </task>
+
+    <task id="LOCAL-00001" summary="lagt til logg inn og registrer org buttons.også lagt til logo, og slogan. alt er skalert etter iphone x">
+      <created>1635095779664</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1635095779664</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+
     <option name="localTasksCounter" value="3" />
+
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,6 +137,10 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="fikset litt på CSSen, lagt til border, border-radius, endret margins, etc. Fortsetter senere, ikke ferdig. - HL" />
     <MESSAGE value="Lagt inn searchbar." />
+
+    <MESSAGE value="lagt til logg inn og registrer org buttons.også lagt til logo, og slogan. alt er skalert etter iphone x" />
+    <option name="LAST_COMMIT_MESSAGE" value="lagt til logg inn og registrer org buttons.også lagt til logo, og slogan. alt er skalert etter iphone x" />
+
     <MESSAGE value="Lagt inn kart-knappen (må fikse), endret fonter, lagt inn minimum-input på kapasitet (så man ikke kan legge inn antall under 0 som kapasitet), endret på input for addresse, lagt til header, etc. Ikke helt ferdig/fornøyd, med har hatt problemer med branchene så legger ut det som er - HL" />
     <option name="LAST_COMMIT_MESSAGE" value="Lagt inn kart-knappen (må fikse), endret fonter, lagt inn minimum-input på kapasitet (så man ikke kan legge inn antall under 0 som kapasitet), endret på input for addresse, lagt til header, etc. Ikke helt ferdig/fornøyd, med har hatt problemer med branchene så legger ut det som er - HL" />
   </component>
