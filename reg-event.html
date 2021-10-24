@@ -9,38 +9,48 @@
   <title>Mainpage</title>
 </head>
 <body>
-  <div id="main">
+
+<div id="main">
+  <header id="header">
+    <h2>Register new event</h2>
+  </header>
     <form action="#">
-      <label for="eventname"> Name of event
-        <input id="eventname" type="text">
-      </label>
+      <label for="eventname"> Event title
+        <br><input id="eventname" type="text">
+      </label><br>
       <label for="type"> Type of event
-        <input type="text" id="type">
-      </label>
-      <label for="org"> Organizer
-        <input type="text" id="org">
-      </label>
-      <label> Alcoholic Involved
+        <br><input type="text" id="type">
+      </label><br>
+      <label for="org"> Host/organizer name
+       <br> <input type="text" id="org">
+      </label><br>
+      <label> Permit alcohol use at event?
         <select id="alcohol">
           <option value="No">No</option>
           <option value="Yes">Yes</option>
         </select><br>
       </label> <br>
+      <label for="date"> Date
+        <br><input type="date" id="date">
+      </label><br>
       <label for="time"> Time<br>
         <input type="time" id="time">
       </label><br>
-      <label for="date"> Date
-        <input type="date" id="date">
+      <label for="adr">Address <br>
+        <input type="textarea" placeholder="Street name + number" id="adr">
+        <input type="number" placeholder="post code" min="4" max="4" id="adr">
+        <input type="textarea" placeholder="City/town" id="adr">
       </label>
-      <label for="adr">Address
-        <input type="text" id="adr">
-      </label>
-      <label for="capacity">Capacity
-        <input type="number" id="capacity">
-      </label>
-      <button type="submit" id="btn">Create event</button>
+      <br> <label for="capacity">Event capacity
+       <br> <input type="number" min="1" id="capacity">
+      </label><br>
+      <br> <label for="Addinfo"> Additional information
+    <br> <textarea rows="3" cols="10" maxlength="400" id="addinfo"></textarea></label>
+      <br>
+      <br><button type="submit" id="btn">Create event</button>
     </form>
   </div>
+<img id="mapicon" src="icons/map.png">
   <nav>
     <ul><img src="icons/settings.png"><br>Settings</ul> <!-- Settings ikon er fiksa -->
     <ul onclick="location.href='mainpage.html'"><img src="icons/explore.png"><br>Explore</ul> <!-- måte legge på onclick for å få gjort liste elemtet tl å fungere som liste -->

@@ -9,6 +9,7 @@ body {
     height: calc(100% - 55px); /*placeholder*/
     position: absolute;
     top: 0;
+    font-family: helvetica;
     overflow: auto;
     text-align: center;
 }
@@ -53,9 +54,13 @@ ul:hover {
 
 ul:active {                 /* bør finne annen måte å vise at du klikker på knappen*/
     background-color: #74ae96;
-    box-shadow: 2px 2px black;
+    box-shadow=inset 2px black;opacity:40%;
 }
 
+ul:active{/*børfinneannenmåteåviseatduklikkerpåknappen*/
+    background-color:#74ae96;
+
+}
 ul img {
     width: 25px;
     height: 25px;
@@ -83,8 +88,9 @@ ul img {
 
 #mapicon:active { /* bør finne annen måte å vise at du klikker på knappen*/
     background-color: #74ae96;
-    box-shadow: 2px 2px black;
+    box-shadow=inset 2px black; opacity:40%;
 }
+
 #header {
     position: relative;
     text-align: center;
