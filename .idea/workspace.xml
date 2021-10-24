@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fec88d16-bb83-465e-980c-785955065668" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/reg-event.html" beforeDir="false" afterPath="$PROJECT_DIR$/reg-event.html" afterDir="false" />
-    </list>
+    <list default="true" id="fec88d16-bb83-465e-980c-785955065668" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,7 +38,6 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/css/main.css" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/mainpage.html" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="1zg4oF2GrutOLsjSrIujam4BixB" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
