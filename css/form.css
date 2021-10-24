@@ -1,0 +1,59 @@
+#header {
+    font-size: 1.2em;
+    font-family: helvetica;
+    font-weight: bold;
+    text-underline: #4db88e;
+    width:265px;
+    padding:20px;
+    height: max-content;
+    margin:auto;
+    text-align: center;
+    background-color: #6CE0B0;
+    border: aqua;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+
+form {
+    width:300px;
+    padding:20px;
+    font-weight: bold;
+    height: max-content;
+    font-family: helvetica;
+    margin:auto;
+    background-color: #6CE0B0;
+    box-sizing: border-box;
+    border: aqua;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 100px;
+
+
+}
+
+input {
+    margin-bottom: 20px;
+    border: aquamarine;
+    border-radius: 5px;
+    width: 70%;
+
+}
+
+#addinfo {
+    border: azure;
+    border-radius: 10px;
+    width: 200px;
+    height: 60px;
+}
+
+
+.btn {
+    background-color: azure;
+    height: 30px;
+    border: azure;
+    border-radius: 5px;
+
+}
+

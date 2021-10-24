@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
     <title>Mainpage</title>
 </head>
 <body>
@@ -11,29 +12,49 @@
         <p>Activities near your area</p>
         <div class="event">
             <div class="bilde">
-                <img src="icons/Gaming til O-tivity.png" width="250px" height="75px">
+                <img src="icons/gaming.png" width="100%" height="75px">
             </div>
             <div class="info">
-                <p class="leftp"> Gaming <br> Venner <br> gøy </p>
-                <p class="rightp"> Alkohol <br> time <br> date </p>
+                <p> Activity: Gamingnight <br>
+                    Organizer: The InTelectuals<br>
+                    Address: Gimlegate 48B <br>
+                    City/Town: Kristiansand <br>
+                    Postcode: 4630 <br>
+                    Date & Time: 23.05.22 - 19:45 <br>
+                    Alcohol: No <br>
+                    Capacity: 10  </p>
             </div>
         </div>
         <div class="event">
             <div class="bilde">
-                <img src="icons/Fest til O-tivity.png"width="250px" height="75px">
+                <img src="icons/feast.png"width="100%" height="75px">
             </div>
             <div class="info">
-                <p class="leftp"> Fotball <br> sport <br> gøy </p>
-                <p class="rightp"> Alkohol <br> time <br> date </p>
+                    <p>
+                        Activity: Consert <br>
+                        Organizer: Spartacus<br>
+                        Address: Fosnaveien 102 <br>
+                        City/Town: Kristiansand <br>
+                        Postcode: 4630 <br>
+                        Date & Time: 13.05.22 - 18:00 <br>
+                        Alcohol: yes <br>
+                        Capacity: 10</p>
             </div>
         </div>
         <div class="event">
             <div class="bilde">
-                <img src="icons/Volleyball til O-tivity.png"width="250px" height="75px">
+                <img src="icons/sport.png"width="100%" height="75px">
             </div>
             <div class="info">
-                <p class="leftp"> Volleyball <br> sport <br> gøy </p>
-                <p class="rightp"> Alkohol <br> time <br> date </p>
+                <p>
+                Activity: Volleyball <br>
+                Organizer: Pizzacus<br>
+                Address: Bystranda <br>
+                City/Town: Kristiansand <br>
+                Postcode: 4630 <br>
+                Date & Time: 30.05.22 - 15:00 <br>
+                Alcohol: No <br>
+                Capacity: 10 </p>
             </div>
         </div>
     </div>
@@ -48,5 +69,38 @@
         <ul><img src="icons/calender.png"><br>Calender</ul>
         <ul><img src="icons/profile.png"><br>Profile</ul>
     </nav>
+    <script>
+        let main = document.getElementById("main")
+        let newEvent = JSON.parse(window.localStorage.getItem("event")); //Gjør string fra localStorage om til objekt
+
+        if (localStorage.length > 0){ //hvis localstorage har innhold start funksjon addEvent
+            function addEvent(){
+                let evName = newEvent.name;//henter value ifra objekt
+                let evType = newEvent.type;
+                let evOrg = newEvent.org;
+                let evAlc = newEvent.alc;
+                let evCap = newEvent.cap;
+                let evTime = newEvent.time;
+                let evDate = newEvent.date;
+                let evAdr = newEvent.adr;
+                let evAdr2 = newEvent.adr2;
+                let evAdr3 = newEvent.adr3;
+                main.innerHTML += `<div class="event">
+            <div class="bilde">
+                <img src="icons/${evType}.png" width="100%" height="75px">
+            </div>
+            <div class="info">
+                <p class="leftp"> Activity: ${evName} <br>
+                 Organizer: ${evOrg}<br> Address: ${evAdr} <br>
+                 City/Town: ${evAdr3} <br>Postcode: ${evAdr2} <br>
+                  Date & Time: ${evDate} - ${evTime} <br>
+                   Alcohol: ${evAlc} <br> Capacity: ${evCap}  </p>
+            </div>
+        </div>`; //setter value som info til det nye event
+            }
+            addEvent(newEvent);
+        }
+    </script>
 </body>
 </html>
+

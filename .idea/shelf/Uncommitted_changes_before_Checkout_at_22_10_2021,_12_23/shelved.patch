@@ -1,0 +1,18 @@
+Index: mainpage.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\n<html lang=\"en\">\n<head>\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <meta charset=\"UTF-8\">\n    <link rel=\"stylesheet\" href=\"css/main.css\">\n    <title>Mainpage</title>\n</head>\n<body>\n    <div id=\"main\">\n        <p>Activities near your area</p>\n        <div class=\"event\">\n            <div class=\"bilde\">\n                <img src=\"icons/Gaming til O-tivity.png\" width=\"250px\" height=\"75px\">\n            </div>\n            <div class=\"info\">\n                <p class=\"leftp\"> Gaming <br> Venner <br> gøy </p>\n                <p class=\"rightp\"> Alkohol <br> time <br> date </p>\n            </div>\n        </div>\n        <div class=\"event\">\n            <div class=\"bilde\">\n                <img src=\"icons/Fest til O-tivity.png\"width=\"250px\" height=\"75px\">\n            </div>\n            <div class=\"info\">\n                <p class=\"leftp\"> Fotball <br> sport <br> gøy </p>\n                <p class=\"rightp\"> Alkohol <br> time <br> date </p>\n            </div>\n        </div>\n        <div class=\"event\">\n            <div class=\"bilde\">\n                <img src=\"icons/Volleyball til O-tivity.png\"width=\"250px\" height=\"75px\">\n            </div>\n            <div class=\"info\">\n                <p class=\"leftp\"> Volleyball <br> sport <br> gøy </p>\n                <p class=\"rightp\"> Alkohol <br> time <br> date </p>\n            </div>\n        </div>\n    </div>\n    <div id=\"header\">\n        <input id=\"search\" type=\"text\" placeholder=\"Search for an activity...\">\n        <button onclick=\"location.href=`reg-event.html`\">+</button>\n    </div>\n    <img id=\"mapicon\" src=\"icons/map.png\">\n    <nav>\n        <ul><img src=\"icons/settings.png\"><br>Settings</ul> <!-- fix setings icon -->\n        <ul><img src=\"icons/explore.png\"><br>Explore</ul>\n        <ul><img src=\"icons/calender.png\"><br>Calender</ul>\n        <ul><img src=\"icons/profile.png\"><br>Profile</ul>\n    </nav>\n</body>\n</html>\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/mainpage.html b/mainpage.html
+--- a/mainpage.html	
++++ b/mainpage.html	
+@@ -47,6 +47,7 @@
+         <ul><img src="icons/explore.png"><br>Explore</ul>
+         <ul><img src="icons/calender.png"><br>Calender</ul>
+         <ul><img src="icons/profile.png"><br>Profile</ul>
++        
+     </nav>
+ </body>
+ </html>
