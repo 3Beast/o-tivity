@@ -14,7 +14,7 @@
   <header id="header">
     <h2>Register new event</h2>
   </header>
-    <form action="#">
+    <form action="mainpage.html" onsubmit="handleSubmit()" method="POST">
       <label for="eventname"> Event title
         <br><input id="eventname" type="text">
       </label><br>
@@ -46,8 +46,7 @@
       </label><br>
       <br> <label for="Addinfo"> Additional information
     <br> <textarea rows="3" cols="10" maxlength="400" id="addinfo"></textarea></label>
-      <br>
-      <br><button type="submit" id="btn">Create event</button>
+      <br> <br><button type="submit" id="btn" class="event-to-main" href="mainpage.html"> Create Event</button>
     </form>
   </div>
 <img id="mapicon" src="icons/map.png">
@@ -57,7 +56,8 @@
     <ul><img src="icons/calender.png"><br>Calender</ul>
     <ul><img src="icons/profile.png"><br>Profile</ul>
   </nav>
-  <script>
+
+<script>
       let btnSubmit = document.getElementById("btn");
       btnSubmit.addEventListener("click", handleSubmit); //sier at ved click skal button kjøre funksjon handle submit
 
@@ -71,6 +71,25 @@
       let inpAdr = document.getElementById("adr");
       let inpAdr2 = document.getElementById("adr2");
       let inpAdr3 = document.getElementById("adr3");
+
+      function redirect (url) {
+        var ua        = navigator.userAgent.toLowerCase(),
+                isIE      = ua.indexOf('msie') !== -1,
+                version   = parseInt(ua.substr(4, 2), 10);
+
+        // Internet Explorer 8 and lower
+        if (isIE && version < 9) {
+          var link = document.createElement('a');
+          link.href = url;
+          document.body.appendChild(link);
+          link.click();
+        }
+
+        // All other browsers can use the standard window.location.href (they don't lose HTTP_REFERER like Internet Explorer 8 & lower does)
+        else {
+          window.location.href = url;
+        }
+      }
 
       function handleSubmit() {
 
@@ -88,8 +107,8 @@
         let event = {name:evname, type:type, org:org, date:date,
           cap:cap, adr:adr, adr2:adr2, adr3:adr3, alc:alc, time:time}; // legger verdiene inn i et objekt
 
-        window.localStorage.setItem('event', JSON.stringify(event)); //lagrer objektet som string i local storage
-      }
-  </script>
+        window.localStorage.setItem('event', JSON.stringify(event));//lagrer objektet som string i local storage
+        redirect();      }
+</script>
 </body>
 </html>
