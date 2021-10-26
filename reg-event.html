@@ -49,13 +49,13 @@
       <br> <br><button type="submit" id="btn" class="event-to-main" href="mainpage.html"> Create Event</button>
     </form>
   </div>
-<img id="mapicon" src="icons/map.png">
-  <nav>
-    <ul><img src="icons/settings.png"><br>Settings</ul> <!-- Settings ikon er fiksa -->
-    <ul onclick="location.href='mainpage.html'"><img src="icons/explore.png"><br>Explore</ul> <!-- måte legge på onclick for å få gjort liste elemtet tl å fungere som liste -->
-    <ul><img src="icons/calender.png"><br>Calender</ul>
-    <ul><img src="icons/profile.png"><br>Profile</ul>
-  </nav>
+    <nav class="footer">
+      <ul><img onclick="window.location.href=`settings.html`" src="icons/settings.png"><br>Settings</ul> <!-- fix setings icon -->
+      <ul onclick="location.href='mainpage.html'"><img src="icons/explore.png"><br>Explore</ul>
+      <ul><img src="icons/map.png"><br>Map</ul>
+      <ul><img src="icons/calender.png"><br>Calender</ul>
+      <ul><img src="icons/profile.png"><br>Profile</ul>
+    </nav>
 
 <script>
       let btnSubmit = document.getElementById("btn");
