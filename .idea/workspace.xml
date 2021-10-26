@@ -4,20 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8d86467-2589-4a68-a4fa-d85a909430c7" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/css/settings.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/icons/addevent.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_22_10_2021_19_40__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_22_10_2021_19_40__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_10_2021_17_31__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_10_2021_17_31__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_10_2021_17_31__Changes_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_24_10_2021_17_31__Changes_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_10_2021_13_58__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_10_2021_13_58__Changes_.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25_10_2021_15_32__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/form.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/form.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/icons/img.png" beforeDir="false" />
+    <list default="true" id="f8d86467-2589-4a68-a4fa-d85a909430c7" name="Changes" comment="dytta map icon ned til footer. endret litt på design. legger til settings html og fortsetter der.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/settings.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/settings.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mainpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/mainpage.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reg-event.html" beforeDir="false" afterPath="$PROJECT_DIR$/reg-event.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.html" beforeDir="false" afterPath="$PROJECT_DIR$/settings.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,8 +67,16 @@
       <updated>1635188763763</updated>
       <workItem from="1635188765467" duration="6177000" />
       <workItem from="1635195018042" duration="481000" />
-      <workItem from="1635237934360" duration="1644000" />
+      <workItem from="1635237934360" duration="5059000" />
     </task>
+    <task id="LOCAL-00001" summary="dytta map icon ned til footer. endret litt på design. legger til settings html og fortsetter der.">
+      <created>1635239701640</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1635239701641</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -94,5 +93,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="dytta map icon ned til footer. endret litt på design. legger til settings html og fortsetter der." />
+    <option name="LAST_COMMIT_MESSAGE" value="dytta map icon ned til footer. endret litt på design. legger til settings html og fortsetter der." />
   </component>
 </project>
