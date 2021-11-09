@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fec88d16-bb83-465e-980c-785955065668" name="Changes" comment="?">
-      <change beforePath="$PROJECT_DIR$/.idea/pom.xml" beforeDir="false" />
+    <list default="true" id="fec88d16-bb83-465e-980c-785955065668" name="Changes" comment=".">
       <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/profile.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mainpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/mainpage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/profile.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -29,10 +27,12 @@
       </list>
     </option>
   </component>
+  <component name="Git.Rebase.Settings">
+    <option name="NEW_BASE" value="origin/Asbjorn" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="form-css" />
         <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
@@ -101,7 +101,8 @@
       <workItem from="1635165342160" duration="228000" />
       <workItem from="1635168069034" duration="906000" />
       <workItem from="1636390666290" duration="4846000" />
-      <workItem from="1636398501244" duration="8861000" />
+      <workItem from="1636398501244" duration="9530000" />
+      <workItem from="1636447889196" duration="5171000" />
     </task>
     <task id="LOCAL−00001" summary="fikset litt på CSSen, lagt til border, border-radius, endret margins, etc. Fortsetter senere, ikke ferdig. - HL">
       <created>1634827546419</created>
@@ -134,7 +135,13 @@
       <option name="presentableId" value="LOCAL−00004" />
       <updated>1636395635987</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL−00005" summary="Startet på profilsiden">
+      <created>1636410137238</created>
+      <option name="number" value="LOCAL−00005" />
+      <option name="presentableId" value="LOCAL−00005" />
+      <updated>1636410137238</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,7 +167,9 @@
     <MESSAGE value="Lagt inn kart-knappen (må fikse), endret fonter, lagt inn minimum-input på kapasitet (så man ikke kan legge inn antall under 0 som kapasitet), endret på input for addresse, lagt til header, etc. Ikke helt ferdig/fornøyd, med har hatt problemer med branchene så legger ut det som er - HL" />
     <MESSAGE value="Gjorde add event knappen responsiv" />
     <MESSAGE value="?" />
-    <option name="LAST_COMMIT_MESSAGE" value="?" />
+    <MESSAGE value="Startet på profilsiden" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -1,10 +1,27 @@
+#Hobbies{
+    position: relative;
+    right: 500px;
+    top: 200px;
+
+}
+#Notifications{
+    position: relative;
+    left: 500px;
+    top: -200px;
+}
+#profilepicture{
+    position: relative;
+    bottom: 300px;
+
+}
+
 .profile{
     background: linear-gradient(to bottom, #96f8f7 , #6CE0B0) ;
     width: 100%;
-    height: calc(100% - 55px); /*placeholder*/
+    height: calc(100% - 45px); /*placeholder*/
     position: absolute;
     top: 0;
-    font-family: helvetica;
+    font-family:helvetica;
     overflow: auto;
     text-align: center;
 
