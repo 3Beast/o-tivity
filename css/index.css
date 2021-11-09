@@ -42,7 +42,7 @@ body {
     display: inline-block;
     margin-bottom: 1ex;
     position: absolute;
-    bottom: 150px;
+    bottom: 780px;
     left: calc(50% - 55px);
 }
 
@@ -50,6 +50,6 @@ body {
     text-align: center;
     display: inline-block;
     position: absolute;
-    bottom: 125px;
+    bottom: 750px;
     left: calc(50% - 80px);
 }
