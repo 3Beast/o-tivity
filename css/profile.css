@@ -1,6 +1,17 @@
+body{
+    background: linear-gradient(to bottom, #96f8f7 , #6CE0B0) ;
+
+}
+
+.boxopacity{
+
+
+
+
+}
 #Hobbies{
     position: relative;
-    right: 500px;
+    right: 100px;
     top: 200px;
 
 
@@ -17,87 +28,13 @@
 
 }
 
+
+
 .profile{
-    background: linear-gradient(to bottom, #96f8f7 , #6CE0B0) ;
-    width: 100%;
-    height: calc(100% - 45px); /*placeholder*/
-    position: absolute;
-    top: 0;
     font-family:helvetica;
     overflow: auto;
     text-align: center;
 
-}
-
-
-/* kopierte fra main.css siden menyen på bunnen skal være lik*/
-nav{
-    height: 55px;
-    width: 100%;
-    background: #4db88e;
-    text-align: center;
-    position: absolute;
-    bottom: 0;
-}
-
-ul{                             /*gjør navbar knappene til sirkler og styler dem*/
-    border: solid 1px black; /*fjernes når alt er ok*/
-    text-align: center;
-    width: 52px;
-    height: 52px;
-    border-radius: 50%;
-    display: inline-block;
-    padding: 0;
-    margin: 0;
-    font-size: 0.8em;
-}
-
-ul:hover {
-    background-color: #74ae96;
-}
-
-ul:active {                 /* bør finne annen måte å vise at du klikker på knappen*/
-    background-color: #74ae96;
-    box-shadow: inset 2px 2px black;
-    opacity:40%;
-}
-
-ul:active{/*børfinneannenmåteåviseatduklikkerpåknappen*/
-    background-color:#74ae96;
 
 }
-ul img {
-    width: 25px;
-    height: 25px;
-}
-#mapicon{                             /*gjør navbar knappene til sirkler og styler dem*/
-    border: solid 1px black; /*fjernes når alt er ok*/
-    text-align: center;
-    width: 52px;
-    height: 52px;
-    border-radius: 50%;
-    display: inline-block;
-    padding: 0;
-    margin-bottom: 1ex;
-    font-size: 0.8em;
-    position: absolute;
-    bottom: 55px;
-    left: calc(50% - 26px);
-}
 
-#mapicon:hover {
-    background-color: #74ae96;
-}
-
-#mapicon:active { /* bør finne annen måte å vise at du klikker på knappen*/
-    background-color: #74ae96;
-    box-shadow: inset 2px 2px black;
-    opacity:40%;
-}
-
-#header {
-    position: relative;
-    text-align: center;
-    margin-top: 0.2em;
-    top: 0;
-}

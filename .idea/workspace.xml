@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fec88d16-bb83-465e-980c-785955065668" name="Changes" comment="css">
+    <list default="true" id="fec88d16-bb83-465e-980c-785955065668" name="Changes" comment="Flyttet login baren og registrering av organisasjon opp i &quot;mobilskjermen&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/profile.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/profile.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +103,9 @@
       <workItem from="1635168069034" duration="906000" />
       <workItem from="1636390666290" duration="4846000" />
       <workItem from="1636398501244" duration="9530000" />
-      <workItem from="1636447889196" duration="5931000" />
+      <workItem from="1636447889196" duration="7814000" />
+      <workItem from="1636478726982" duration="1100000" />
+      <workItem from="1636662107658" duration="1118000" />
     </task>
     <task id="LOCAL−00001" summary="fikset litt på CSSen, lagt til border, border-radius, endret margins, etc. Fortsetter senere, ikke ferdig. - HL">
       <created>1634827546419</created>
@@ -146,7 +150,13 @@
       <option name="presentableId" value="LOCAL−00006" />
       <updated>1636459725661</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL−00007" summary="Flyttet login baren og registrering av organisasjon opp i &quot;mobilskjermen&quot;">
+      <created>1636460442251</created>
+      <option name="number" value="LOCAL−00007" />
+      <option name="presentableId" value="LOCAL−00007" />
+      <updated>1636460442251</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,7 +185,8 @@
     <MESSAGE value="Startet på profilsiden" />
     <MESSAGE value="." />
     <MESSAGE value="css" />
-    <option name="LAST_COMMIT_MESSAGE" value="css" />
+    <MESSAGE value="Flyttet login baren og registrering av organisasjon opp i &quot;mobilskjermen&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="Flyttet login baren og registrering av organisasjon opp i &quot;mobilskjermen&quot;" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
