@@ -1,5 +1,20 @@
-# 
 
-(Under konstruksjon) Gruppe 3B - medlemmer:
+Gruppe 3B - medlemmer:
 
-Asbjørn Håland Hestnes Eziz Ømer Eirik Skogland Nedland Silje Elise Strøm Tonje Markseth Frida Valvik Stian Steinsland Helene Louise Ludvigsen
+Vi jobber med fag: IS-100, IS-104 og IS-114
+
+Asbjørn Håland Hestnes 
+<br>
+Eziz Ømer
+<br>
+Eirik Skogland Nedland
+<br>
+Silje Elise Strøm
+<br>
+Tonje Markseth
+<br>
+Frida Valvik
+<br>
+Stian Steinsland
+<br>
+Helene Louise Ludvigsen

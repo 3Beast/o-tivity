@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="9490bed9-7de3-494c-9539-de2a516c8206" name="Changes" comment="css design, js fungerer ikke enda.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/calendar.js" beforeDir="false" afterPath="$PROJECT_DIR$/calendar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/calendar.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/calendar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Calendar.html" beforeDir="false" afterPath="$PROJECT_DIR$/Calendar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,15 +28,24 @@
     <setting file="file://$PROJECT_DIR$/css/main.css" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/mainpage.html" root0="FORCE_HIGHLIGHTING" />
   </component>
+  <component name="ProjectId" id="20VPIYx1sTUTdwjzs9jft70adHw" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task id="LOCAL-00001" summary="update">
       <created>1635784689207</created>
@@ -52,8 +61,27 @@
       <option name="project" value="LOCAL" />
       <updated>1635853730306</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="css design, js fungerer ikke enda.">
+      <created>1636101558506</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1636101558506</updated>
+    </task>
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9490bed9-7de3-494c-9539-de2a516c8206" name="Changes" comment="css design, js fungerer ikke enda." />
+      <created>1636126707074</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1636126707074</updated>
+      <workItem from="1636126711414" duration="1991000" />
+      <workItem from="1637151268556" duration="594000" />
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
