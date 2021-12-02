@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="Viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="css/calendar.css">
+</head>
+<body>
+    <div id="main">
+        <div class="calendar">
+            <div class="month">
+               <i class="fas fa-angle-left prev"></i>
+                <div class="date">
+                    <h1></h1>
+                    <p></p>
+                </div>
+                <i class="fas fa-angle-right next"></i>
+            </div>
+            <div class="weekdays">
+                <div>Sun</div>
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+            </div>
+            <div class="days"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigasjonsfelt med settings, explore, map, kalender og profil -->
+    <nav class="footer">
+        <ul><img onclick="window.location.href=`settings.html`" src="icons/settings.png"><br>Settings</ul>
+        <ul onclick="location.href='mainpage.html'"><img src="icons/explore.png"><br>Explore</ul>
+        <ul><img src="icons/map.png"><br>Map</ul>
+        <ul onclick="location.href='calendar.html'"><img src="icons/calender.png"><br>Calender</ul>
+        <ul><img src="icons/profile.png"><br>Profile</ul>
+    </nav>
+
+    <script src="calendar.js"></script>
+</body>
+</html>
