@@ -4,6 +4,12 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
+
+    <list default="true" id="9490bed9-7de3-494c-9539-de2a516c8206" name="Changes" comment="css design, js fungerer ikke enda.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Calendar.html" beforeDir="false" afterPath="$PROJECT_DIR$/Calendar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+=======
     <list default="true" id="fec88d16-bb83-465e-980c-785955065668" name="Changes" comment="?">
       <change beforePath="$PROJECT_DIR$/.idea/pom.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
@@ -11,6 +17,7 @@
       <change beforePath="$PROJECT_DIR$/css/profile.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/profile.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mainpage.html" beforeDir="false" afterPath="$PROJECT_DIR$/mainpage.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/profile.html" beforeDir="false" afterPath="$PROJECT_DIR$/profile.html" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,34 +30,23 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+
+=======
         <option value="CSS File" />
+
         <option value="JavaScript File" />
         <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="form-css" />
-        <entry key="$PROJECT_DIR$" value="main" />
-      </map>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitSEFilterConfiguration">
-    <file-type-list>
-      <filtered-out-file-type name="LOCAL_BRANCH" />
-      <filtered-out-file-type name="REMOTE_BRANCH" />
-      <filtered-out-file-type name="TAG" />
-      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
-    </file-type-list>
-  </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/mainpage.html" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/css/main.css" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/mainpage.html" root0="FORCE_HIGHLIGHTING" />
   </component>
-  <component name="ProjectId" id="1zg4oF2GrutOLsjSrIujam4BixB" />
+  <component name="ProjectId" id="20VPIYx1sTUTdwjzs9jft70adHw" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -59,19 +55,27 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+
+=======
     <property name="com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File" value="HTML" />
     <property name="com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable" value="ALL" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Gruppe-3B" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task id="LOCAL-00001" summary="update">
+      <created>1635784689207</created>
+=======
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -117,11 +121,38 @@
     </task>
     <task id="LOCAL-00001" summary="lagt til logg inn og registrer org buttons.også lagt til logo, og slogan. alt er skalert etter iphone x">
       <created>1635095779664</created>
+
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1635095779664</updated>
+      <updated>1635784689207</updated>
     </task>
+    <task id="LOCAL-00002" summary="css design, js fungerer ikke enda.">
+      <created>1635853730306</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1635853730306</updated>
+    </task>
+    <task id="LOCAL-00003" summary="css design, js fungerer ikke enda.">
+      <created>1636101558506</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1636101558506</updated>
+    </task>
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9490bed9-7de3-494c-9539-de2a516c8206" name="Changes" comment="css design, js fungerer ikke enda." />
+      <created>1636126707074</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1636126707074</updated>
+      <workItem from="1636126711414" duration="1991000" />
+      <workItem from="1637151268556" duration="594000" />
+    </task>
+
+    <option name="localTasksCounter" value="4" />
+=======
     <task id="LOCAL−00003" summary="Gjorde add event knappen responsiv">
       <created>1635168434411</created>
       <option name="number" value="LOCAL−00003" />
@@ -135,6 +166,7 @@
       <updated>1636395635987</updated>
     </task>
     <option name="localTasksCounter" value="5" />
+
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,6 +185,11 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+
+    <MESSAGE value="update" />
+    <MESSAGE value="css design, js fungerer ikke enda." />
+    <option name="LAST_COMMIT_MESSAGE" value="css design, js fungerer ikke enda." />
+=======
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="fikset litt på CSSen, lagt til border, border-radius, endret margins, etc. Fortsetter senere, ikke ferdig. - HL" />
     <MESSAGE value="Lagt inn searchbar." />
@@ -165,5 +202,6 @@
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
     <select />
+
   </component>
 </project>

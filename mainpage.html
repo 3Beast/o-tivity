@@ -8,8 +8,13 @@
     <title>Mainpage</title>
 </head>
 <body>
+
     <div id="main">
-        <p>Activities near your area</p>
+        <div class="searchbar">
+            <input id="search" type="text" placeholder="Search for an activity...">
+            <div class="addeventbutton" onclick="location.href=`reg-event.html`"></div>
+        </div>
+        <p id="undertitle">Activities near your area</p>
         <div class="event">
             <div class="bilde">
                 <img src="icons/gaming.png" width="100%" height="75px">
@@ -48,7 +53,7 @@
             <div class="info">
                 <p>
                 Activity: Volleyball <br>
-                Organizer: Pizzacus<br>
+                Organizer: The Historians<br>
                 Address: Bystranda <br>
                 City/Town: Kristiansand <br>
                 Postcode: 4630 <br>
@@ -58,18 +63,20 @@
             </div>
         </div>
     </div>
+
+
+    <!-- Navigasjonsfelt med settings, explore, map, kalender og profil -->
+    <nav class="footer">
+        <ul><img onclick="window.location.href=`settings.html`" src="icons/settings.png"><br>Settings</ul> <!-- fix setings icon -->
+        <ul onclick="location.href='mainpage.html'"><img src="icons/explore.png"><br>Explore</ul>
+        <ul><img src="icons/map.png"><br>Map</ul>
+        <ul onclick="location.href='calendar.html'"><img src="icons/calender.png"><br>Calender</ul>
+        <ul><img src="icons/profile.png"><br>Profile</ul>
+    </nav>
     <div id="header">
         <input id="search" type="text" placeholder="Search for an activity...">
         <button onclick="location.href=`reg-event.html`">+</button>
     </div>
-
-    <img id="mapicon" src="icons/map.png">
-    <nav>
-        <ul><img src="icons/settings.png"><br>Settings</ul> <!-- fix setings icon -->
-        <ul><img src="icons/explore.png"><br>Explore</ul>
-        <ul><img src="icons/calender.png"><br>Calender</ul>
-        <ul><img src="icons/profile.png"><br>Profile</ul>
-    </nav>
     <script>
         let main = document.getElementById("main")
         let newEvent = JSON.parse(window.localStorage.getItem("event")); //Gjør string fra localStorage om til objekt
