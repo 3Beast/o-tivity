@@ -64,6 +64,7 @@
         </div>
     </div>
 
+
     <!-- Navigasjonsfelt med settings, explore, map, kalender og profil -->
     <nav class="footer">
         <ul><img onclick="window.location.href=`settings.html`" src="icons/settings.png"><br>Settings</ul> <!-- fix setings icon -->
@@ -72,6 +73,10 @@
         <ul onclick="location.href='calendar.html'"><img src="icons/calender.png"><br>Calender</ul>
         <ul><img src="icons/profile.png"><br>Profile</ul>
     </nav>
+    <div id="header">
+        <input id="search" type="text" placeholder="Search for an activity...">
+        <button onclick="location.href=`reg-event.html`">+</button>
+    </div>
     <script>
         let main = document.getElementById("main")
         let newEvent = JSON.parse(window.localStorage.getItem("event")); //Gjør string fra localStorage om til objekt
