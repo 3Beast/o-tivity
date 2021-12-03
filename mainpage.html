@@ -10,10 +10,6 @@
 <body>
 
     <div id="main">
-        <div class="searchbar">
-            <input id="search" type="text" placeholder="Search for an activity...">
-            <div class="addeventbutton" onclick="location.href=`reg-event.html`"></div>
-        </div>
         <p id="undertitle">Activities near your area</p>
         <div class="event">
             <div class="bilde">
@@ -63,7 +59,10 @@
             </div>
         </div>
     </div>
-
+    <header>
+        <input id="search" type="text" placeholder="Search for an activity...">
+        <div class="addeventbutton" onclick="location.href=`reg-event.html`"></div>
+    </header>
 
     <!-- Navigasjonsfelt med settings, explore, map, kalender og profil -->
     <nav class="footer">
@@ -73,10 +72,6 @@
         <ul onclick="location.href='calendar.html'"><img src="icons/calender.png"><br>Calender</ul>
         <ul><img src="icons/profile.png"><br>Profile</ul>
     </nav>
-    <div id="header">
-        <input id="search" type="text" placeholder="Search for an activity...">
-        <button onclick="location.href=`reg-event.html`">+</button>
-    </div>
     <script>
         let main = document.getElementById("main")
         let newEvent = JSON.parse(window.localStorage.getItem("event")); //Gjør string fra localStorage om til objekt

@@ -6,9 +6,9 @@ body {
 #main{
     background: linear-gradient(to bottom, #96f8f7 , #26a66a) ;
     width: 100%;
-    height: calc(100% - 55px); /*placeholder*/
+    height: calc(100% - 125px); /*placeholder*/
     position: absolute;
-    top: 0;
+    top: 70px;
     font-family: helvetica;
     overflow: auto;
     text-align: center;
@@ -25,6 +25,7 @@ body {
 }
 p {
     margin-top: 1.8em;
+    padding-left: 5px;
 }
 
 nav{
@@ -93,15 +94,18 @@ ul img {
     opacity:40%;
 }
 
-.searchbar {
+header {
     display: flex;
     flex-wrap: nowrap;
     align-content: center;
     justify-content: center;
     padding-top: 20px;
+    z-index: 1;
+    background-color: #96f8f7;
+    height: 70px;
 }
 
-.searchbar input {
+header input {
     border-radius: 10px;
     height: 30px;
     width: 250px;
@@ -141,9 +145,7 @@ ul img {
     display: inline-block;
     margin: 0;
 }
-p {
-    padding-left: 5px;
-}
+
 .rightp {
     right: 0;
     position: absolute;
