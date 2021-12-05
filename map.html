@@ -15,6 +15,8 @@
         </header>
 
         <div id="main">
+            <iframe width="100%" height="100%" margin="0" padding="0" frameborder="0" border="0" id="gmap_canvas"
+                    src="https://maps.google.com/maps?q=&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
         </div>
 
         <!-- Navigasjonsfelt med settings, explore, map, kalender og profil -->
@@ -33,8 +35,7 @@
             if (localStorage.length > 0){ //hvis localstorage har innhold start funksjon addEvent
                 function addMarker(){
                     let evAdr = newMarker.adr; //henter value ifra objekt
-                    main.innerHTML += `<iframe width="100%" height="100%" margin="0" padding="0" frameborder="0" border="0" id="gmap_canvas"
-                    src="https://maps.google.com/maps?q=' + ${evAdr} + '&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>`; // Henter frem google map og setter på markør ved å bruke value fra objectet evAdr
+                    document.getElementById("gmap_canvas").src = "https://maps.google.com/maps?q=" + evAdr + "&t=&z=13&ie=UTF8&iwloc=&output=embed"; // Henter frem google map og setter på markør ved å bruke value fra objectet evAdr
                 }
                 addMarker(newMarker);
             }
