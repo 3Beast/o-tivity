@@ -1,40 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta name="Viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/settings.css">
-    <title>Settings</title>
-</head>
-<body>
-    <div id="main">
-        <div class="searchbar">
-            <input id="search" type="text" placeholder="Search for a Setting...">
+    <head>
+        <meta name="Viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/settings.css">
+        <title>Settings</title>
+    </head>
+    <body>
+        <div id="main">
+            <div class="searchbar">
+                <input id="search" type="text" placeholder="Search for a Setting...">
+            </div>
+            <ol>
+                <li><b>Account</b></li>
+                <span class="line"></span>
+                <li><b>Appearance</b></li>
+                <span class="line"></span>
+                <li><b>Privacy & Security</b></li>
+                <span class="line"></span>
+                <li><b>Support / Help</b></li>
+                <span class="line"></span>
+                <li><b>About & FAQs</b></li>
+                <span class="line"></span>
+                <li onclick="location.href='regorg.html'"><b>Organization? Register Here!</b></li>
+                <span class="line"></span>
+            </ol>
+            <div class="logoutbtn" onclick="location.href=`index.html`"></div>
         </div>
-        <ol>
-            <li><b>Account</b></li>
-            <span class="line"></span>
-            <li><b>Appearance</b></li>
-            <span class="line"></span>
-            <li><b>Privacy & Security</b></li>
-            <span class="line"></span>
-            <li><b>Support / Help</b></li>
-            <span class="line"></span>
-            <li><b>About & FAQs</b></li>
-            <span class="line"></span>
-            <li><b>Organization? Register Here!</b></li>
-            <span class="line"></span>
-        </ol>
-        <div class="logoutbtn" onclick="location.href=`index.html`"></div>
-    </div>
 
-    <!-- Navigasjonsfelt med settings, explore, map, kalender og profil -->
-    <nav class="footer">
-        <ul><img onclick="window.location.href=`settings.html`" src="icons/settings.png"><br>Settings</ul> <!-- fix setings icon -->
-        <ul onclick="location.href='mainpage.html'"><img src="icons/explore.png"><br>Explore</ul>
-        <ul><img src="icons/map.png"><br>Map</ul>
-        <ul onclick="location.href='calendar.html'"><img src="icons/calender.png"><br>Calender</ul>
-        <ul><img src="icons/profile.png"><br>Profile</ul>
-    </nav>
-</body>
+        <!-- Navigasjonsfelt med settings, explore, map, kalender og profil -->
+        <nav class="footer">
+            <ul onclick="window.location.href=`settings.html`"><img src="icons/settings.png"><br>Settings</ul> <!-- fix setings icon -->
+            <ul onclick="location.href='mainpage.html'"><img src="icons/explore.png"><br>Explore</ul>
+            <ul onclick="location.href='map.html'"><img src="icons/map.png"><br>Map</ul>
+            <ul onclick="location.href='Calendar.html'"><img src="icons/calender.png"><br>Calender</ul>
+            <ul onclick="location.href='profile.html'"><img src="icons/profile.png"><br>Profile</ul>
+        </nav>
+    </body>
 </html>
