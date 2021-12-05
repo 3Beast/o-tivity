@@ -1,25 +1,44 @@
 /* Styler menylisten*/
-ol {
+#settingsmenu {
+    width: 300px;
+    height: max-content; /* Justerer høyden sånn at den slutter etter siste element i content*/
+    margin:auto;
+    box-sizing: border-box;
+    text-align: left;
+    padding: 0 0 20px 25px;
+
+}
+.settingitems {
     list-style: none;
     text-align: left;
-}
+    width: 300px;
+    padding: 10px 0 10px 0;
+    font-weight: bold;
 
-li {
-    padding-top: 20px;
 }
 /* Justerer linjen mellom menuitems*/
 .line {
-    width: 295px;
+    width: 250px;
     border-bottom: 2px solid #33B29B;
     display: block;
-    padding-top: 20px;
+
 }
 /* Styler logout knappen*/
-.logoutbtn {
+.logoutbtn{
+    width: 300px;
+    height: 100px;
+    background-color: transparent;
+    border: none;
+    margin: auto;
+    vertical-align: middle;
+    font-size: 20px;
+
+}
+#logoutimg {
     height: 35px;
     width: 35px;
-    border: none;
-    background-size: cover;
-    background-image: url("../icons/logout.png"); /*Legger inn bilde av et avslutt tegn*/
-    display: flex;
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 10px;
+
 }

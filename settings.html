@@ -12,21 +12,22 @@
             <input id="search" type="text" placeholder="Search for a setting...">
         </header>
         <div id="main">
-            <ol>
-                <li><b>Account</b></li>
-                <span class="line"></span>
-                <li><b>Appearance</b></li>
-                <span class="line"></span>
-                <li><b>Privacy & Security</b></li>
-                <span class="line"></span>
-                <li><b>Support / Help</b></li>
-                <span class="line"></span>
-                <li><b>About & FAQs</b></li>
-                <span class="line"></span>
-                <li onclick="location.href='regorg.html'"><b>Organization? Register Here!</b></li>
-                <span class="line"></span>
-            </ol>
-            <div class="logoutbtn" onclick="location.href=`index.html`"></div>
+            <div id="settingsmenu">
+                    <p class="settingitems">Account</p>
+                    <span class="line"></span>
+                    <p class="settingitems">Appearance</p>
+                    <span class="line"></span>
+                    <p class="settingitems">Privacy & Security</p>
+                    <span class="line"></span>
+                    <p class="settingitems">Support / Help</p>
+                    <span class="line"></span>
+                    <p class="settingitems">About & FAQs</p>
+                    <span class="line"></span>
+                    <p class="settingitems" onclick="location.href='regorg.html'">Organization? Register Here!</p>
+                    <span class="line"></span>
+            </div>
+            <button class="logoutbtn" onclick="location.href=`index.html`"><img id="logoutimg" src="icons/logout.png"> Log out</button>
+
         </div>
 
         <!-- Navigasjonsfelt med settings, explore, map, kalender og profil -->
