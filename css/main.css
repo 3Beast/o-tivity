@@ -1,33 +1,100 @@
+/* Gjør sånn at det ikke blir en hvit kant lang sidene på nettleseren*/
 body {
     padding: 0;
     margin: 0;
 }
-
+/* Styler bakgrunnen*/
 #main{
-    background: linear-gradient(to bottom, #96f8f7 , #26a66a) ;
+    background: linear-gradient(to bottom, #96f8f7 , #26a66a); /*Gjør bakgrunnen går fra en farge til en annen*/
     width: 100%;
-    height: calc(100% - 125px); /*placeholder*/
+    height: calc(100% - 125px); /*Justerer høyden slik at den ikke er lengre en navigasjonsfeltet nederst på appen*/
     position: absolute;
     top: 70px;
-    font-family: helvetica;
+    font-family: helvetica, sans-serif;
     overflow: auto;
     text-align: center;
 }
+/* Styler feltet med søkebar og pluss knapp*/
+header {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    padding-top: 20px;
+    z-index: 1;
+    background-color: #96f8f7;
+    height: 70px;
+}
 
+header input {
+    border-radius: 10px;
+    height: 30px;
+    width: 250px;
+    display: flex;
+}
+
+.addeventbutton {
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    border: none;
+    background-size: cover;
+    background-image: url("../icons/addevent.png");  /*Legger inn bilde av et plusstegn*/
+    display: flex;
+}
+
+/* Styler event kortene*/
 .event {
     height: max-content;
     width: 300px;
     display: inline-block;
     border-radius: 10px;
-    padding: 0px;
+    padding: 0;
     margin-top: 0.5em;
     background: #6CE0B0;
+}
+#undertitle {
+    padding: 20px 0 0 0;
+    margin: 0;
 }
 p {
     margin-top: 1.8em;
     padding-left: 5px;
 }
+/* Justerer størrelsen på bilde slik at det passer inn i event kortet*/
+.bilde{
+    width: 100%;
+    position:relative;
+    height: 75px;
+    margin: 0;
+}
 
+.info {
+    width: 100%;
+    position:relative;
+    height: max-content;
+    margin: 0;
+    text-align: left;
+    list-style: none;
+    padding-top: 5px;
+    font-size: 16px;
+}
+.info p{
+    display: inline-block;
+    margin: 0;
+}
+
+.rightp {
+    right: 0;
+    position: absolute;
+    padding-right: 5px;
+}
+.bilde img{
+    border-radius: 10px;
+    object-fit: none;
+}
+
+/* Styler navigasjonsbaren*/
 nav{
     height: 55px;
     width: 100%;
@@ -36,8 +103,8 @@ nav{
     position: absolute;
     bottom: 0;
 }
-
-ul{                             /*gjør navbar knappene til sirkler og styler dem*/
+/* Gjør navbar knappene til sirkler og styler dem*/
+ul{
     /* border: solid 1px black; /*fjernes når alt er ok*/
     text-align: center;
     width: 52px;
@@ -67,9 +134,8 @@ ul img {
     width: 25px;
     height: 25px;
 }
-
-
-#mapicon{                             /*gjør navbar knappene til sirkler og styler dem*/
+/*gjør navbar knappene til sirkler og styler dem*/
+#mapicon {
     border: solid 1px black; /*fjernes når alt er ok*/
     text-align: center;
     width: 52px;
@@ -92,71 +158,4 @@ ul img {
     background-color: #74ae96;
     box-shadow: inset 2px 2px black;
     opacity:40%;
-}
-
-header {
-    display: flex;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: center;
-    padding-top: 20px;
-    z-index: 1;
-    background-color: #96f8f7;
-    height: 70px;
-}
-
-header input {
-    border-radius: 10px;
-    height: 30px;
-    width: 250px;
-    display: flex;
-}
-
-.addeventbutton {
-    border-radius: 50%;
-    height: 35px;
-    width: 35px;
-    border: none;
-    background-size: cover;
-    background-image: url("../icons/addevent.png");
-    display: flex;
-}
-
-.bilde{
-    width: 100%;
-    position:relative;
-    height: 75px;
-    margin: 0;
-
-
-}
-
-.info {
-    width: 100%;
-    position:relative;
-    height: max-content;
-    margin: 0;
-    text-align: left;
-    list-style: none;
-    padding-top: 5px;
-    font-size: 16px;
-}
-.info p{
-    display: inline-block;
-    margin: 0;
-}
-
-.rightp {
-    right: 0;
-    position: absolute;
-    padding-right: 5px;
-}
-.bilde img{
-    border-radius: 10px;
-    object-fit: none;
-}
-
-#undertitle {
-    padding: 20px 0 0 0;
-    margin: 0;
 }

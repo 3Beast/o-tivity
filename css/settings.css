@@ -1,19 +1,60 @@
+/* Gjør sånn at det ikke blir en hvit kant lang sidene på nettleseren*/
 body {
     padding: 0;
     margin: 0;
 }
-
+/* Styler bakgrunnen*/
 #main{
-    background: linear-gradient(to bottom, #96f8f7 , #26a66a) ;
+    background: linear-gradient(to bottom, #96f8f7 , #26a66a); /*Gjør bakgrunnen går fra en farge til en annen*/
     width: 100%;
-    height: calc(100% - 55px); /*placeholder*/
+    height: calc(100% - 55px); /*Justerer høyden slik at den ikke er lengre en navigasjonsfeltet nederst på appen*/
     position: absolute;
     top: 0;
-    font-family: helvetica;
+    font-family: helvetica, sans-serif;
     overflow: auto;
     text-align: center;
 }
+/* Styler feltet med søkebar */
+.searchbar {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    padding-top: 20px;
+}
 
+.searchbar input {
+    border-radius: 10px;
+    height: 30px;
+    width: 250px;
+    display: flex;
+}
+/* Styler menylisten*/
+ol {
+    list-style: none;
+    text-align: left;
+}
+
+li {
+    padding-top: 20px;
+}
+/* Justerer linjen mellom menuitems*/
+.line {
+    width: 295px;
+    border-bottom: 2px solid #33B29B;
+    display: block;
+    padding-top: 20px;
+}
+/* Styler logout knappen*/
+.logoutbtn {
+    height: 35px;
+    width: 35px;
+    border: none;
+    background-size: cover;
+    background-image: url("../icons/logout.png"); /*Legger inn bilde av et avslutt tegn*/
+    display: flex;
+}
+/* Styler navigasjonsbaren*/
 nav{
     height: 55px;
     width: 100%;
@@ -22,8 +63,8 @@ nav{
     position: absolute;
     bottom: 0;
 }
-
-ul{                             /*gjør navbar knappene til sirkler og styler dem*/
+/*gjør navbar knappene til sirkler og styler dem*/
+ul{
     /* border: solid 1px black; /*fjernes når alt er ok*/
     text-align: center;
     width: 52px;
@@ -53,9 +94,8 @@ ul img {
     width: 25px;
     height: 25px;
 }
-
-
-#mapicon{                             /*gjør navbar knappene til sirkler og styler dem*/
+/*gjør navbar knappene til sirkler og styler dem*/
+#mapicon{
     border: solid 1px black; /*fjernes når alt er ok*/
     text-align: center;
     width: 52px;
@@ -78,45 +118,4 @@ ul img {
     background-color: #74ae96;
     box-shadow: inset 2px 2px black;
     opacity:40%;
-}
-
-ol {
-    list-style: none;
-    text-align: left;
-}
-
-li {
-    padding-top: 20px;
-}
-
-.line {
-    width: 295px;
-    border-bottom: 2px solid #33B29B;
-    display: block;
-    padding-top: 20px;
-}
-
-.searchbar {
-    display: flex;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: center;
-    padding-top: 20px;
-}
-
-.searchbar input {
-    border-radius: 10px;
-    height: 30px;
-    width: 250px;
-    display: flex;
-}
-
-.logoutbtn {
-    height: 35px;
-    width: 35px;
-    border: none;
-    background-size: cover;
-    background-image: url("../icons/logout.png");
-    display: flex;
-
 }
