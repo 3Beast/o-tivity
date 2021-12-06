@@ -4,12 +4,13 @@
     <title>Profile</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/profile.css">
     <link rel="icon" href="icons">
 
 </head>
 <body>
-    <div class="profile">
+    <div class="main">
         <p> Profile </p>
             <div id="Hobbies">
                 <img src="icons/hobbies.png" width="50%" height="360px">
@@ -25,13 +26,14 @@
                             <p> Profilnavn </p>
                     </div>
 
-            <img id="mapicon" src="icons/map.png">
-            <nav>
-                <ul><img src="icons/settings.png"><br>Settings</ul>
-                <ul><img src="icons/explore.png"><br>Explore</ul>
-                <ul><img src="icons/calender.png"><br>Calender</ul>
-                <ul><img src="icons/profile.png"><br>Profile</ul>
-            </nav>
+        <!-- Navigasjonsfelt med settings, explore, map, kalender og profil -->
+        <nav class="footer">
+            <ul onclick="window.location.href=`settings.html`"><img src="icons/settings.png"><br>Settings</ul> <!-- fix setings icon -->
+            <ul onclick="location.href='mainpage.html'"><img src="icons/explore.png"><br>Explore</ul>
+            <ul onclick="location.href='map.html'"><img src="icons/map.png"><br>Map</ul>
+            <ul onclick="location.href='Calendar.html'"><img src="icons/calender.png"><br>Calender</ul>
+            <ul onclick="location.href='profile.html'"><img src="icons/profile.png"><br>Profile</ul>
+        </nav>
         </div>
 </div>
 

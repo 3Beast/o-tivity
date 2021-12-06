@@ -4,9 +4,14 @@
     <meta name="Viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>Calendar</title>
+    <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/calendar.css">
 </head>
 <body>
+    <header>
+        <input id="search" type="text" placeholder="Search for an activity...">
+        <div class="addeventbutton" onclick="location.href=`reg-event.html`"></div>
+    </header>
     <div id="main">
         <div class="calendar">
             <div class="month">
@@ -33,11 +38,11 @@
 
     <!-- Navigasjonsfelt med settings, explore, map, kalender og profil -->
     <nav class="footer">
-        <ul><img onclick="window.location.href=`settings.html`" src="icons/settings.png"><br>Settings</ul>
+        <ul onclick="window.location.href=`settings.html`"><img src="icons/settings.png"><br>Settings</ul> <!-- fix setings icon -->
         <ul onclick="location.href='mainpage.html'"><img src="icons/explore.png"><br>Explore</ul>
-        <ul><img src="icons/map.png"><br>Map</ul>
-        <ul onclick="location.href='calendar.html'"><img src="icons/calender.png"><br>Calender</ul>
-        <ul><img src="icons/profile.png"><br>Profile</ul>
+        <ul onclick="location.href='map.html'"><img src="icons/map.png"><br>Map</ul>
+        <ul onclick="location.href='Calendar.html'"><img src="icons/calender.png"><br>Calender</ul>
+        <ul onclick="location.href='profile.html'"><img src="icons/profile.png"><br>Profile</ul>
     </nav>
 
     <script src="calendar.js"></script>

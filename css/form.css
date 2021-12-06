@@ -1,113 +1,113 @@
-body {
-    padding: 0;
-    margin: 0;
-}
-
-#header {
-    font-size: 1.2em;
-    font-weight: bold;
-    text-underline: #4db88e;
-    width:265px;
-    padding:20px;
-    height: max-content;
-    margin:auto;
-    text-align: center;
-    background-color: #6CE0B0;
-    border: aqua;
-    /*border-radius: 10px; */
-    margin-bottom: 40px;
-    margin-top: 20px;
-}
-
-#main {
-    background: linear-gradient(to bottom, #96f8f7, #26a66a);
-    width: 100%;
-    height: calc(100% - 55px); /*placeholder*/
-    position: absolute;
-    top: 0px;
-    font-family: helvetica;
-    overflow: auto;
-    text-align: center;
-}
-
-nav{
-    height: 55px;
-    width: 100%;
-    background: #4db88e;
-    text-align: center;
-    position: absolute;
-    bottom: 0;
-}
-
-ul{                             /*gjør navbar knappene til sirkler og styler dem*/
-    /* border: solid 1px black; /*fjernes når alt er ok*/
-    text-align: center;
-    width: 52px;
-    height: 52px;
-    border-radius: 50%;
-    display: inline-block;
-    padding: 0;
-    margin: 7px 5px 5px 0;
-    font-size: 0.8em;
-}
-
-ul:hover {
-    background-color: #74ae96;
-}
-
-ul:active {                 /* bør finne annen måte å vise at du klikker på knappen*/
-    background-color: #74ae96;
-    box-shadow: inset 2px 2px black;
-    opacity:40%;
-}
-
-ul:active{
-    background-color:#74ae96;
-
-}
-ul img {
-    width: 25px;
-    height: 25px;
-}
-
-form {
+/* Styler innholdet*/
+#content {
     width:300px;
-    padding:20px;
-    font-weight: bold;
-    height: max-content;
-    font-family: helvetica;
+    height: max-content; /* Justerer høyden sånn at den slutter etter siste element i content*/
+    padding: 20px 20px 20px 20px; /* top, right, bottom, left*/
     margin:auto;
     background-color: #6CE0B0;
     box-sizing: border-box;
-    border: aqua;
-    border-radius: 10px;
-    text-align: center;
-    margin-bottom: 100px;
-
+    text-align: left;
 
 }
+/* Styler overskriften "Register organisation" og "Register new event"*/
+#overskrift {
+    font-size: 1.2em;
+    font-weight: bold;
+    width:265px;
+    padding-bottom: 40px;
 
-input {
+}
+/* Styler labels og input elementene i form */
+/* Kode hentet fra https://w3bits.com/labs/css-floating-labels/ og view-source:https://w3bits.com/labs/css-floating-labels/ */
+/* Making the label break the flow */
+.floating-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    user-select: none;
+    z-index: 1500; /* Elementer med z-index avgjør hva som overlapper hverandre. Høyt tall legger seg over lavere tall*/
+}
+
+/* Hide the browser-specific focus styles */
+.floating-label-field {
+    color: black;
+    border-width: 0;
+    z-index: 2000;
+}
+.floating-label-field:focus {
+    outline: 0;
+    box-shadow: 0 0;
+}
+.floating-label-field::placeholder {
+    color: transparent;  /* Med dette designet må placeholder være her, men vi vil ikke se det når vi bruker transparent*/
+}
+
+/* Make the label and field look identical on every browser */
+.floating-label, .floating-label-field {
+    font: inherit;
+    display: block;
+    width: 250px;
+}
+
+.floating-label-field, .floating-label-wrap {
+    position: relative;
+}
+.floating-label-wrap{
+    padding-bottom: 50px;
+}
+/* Styler labels og input slik at det er en svart linje under labelen*/
+.floating-label-field-style {
+    padding-left: 10px;
+    color: black;
+    border: none;
+    width:250px;
+    border-bottom: 2px solid black;
+    background-color: transparent;
+}
+/* Flytter label opp sånn at man kan skrive i input feltet*/
+.floating-label-field-style:focus + .floating-label,
+.floating-label-field-style:not(:placeholder-shown) + .floating-label {
+    z-index: 2500;
+    transform: translate(0, -15px); /* Flytter label opp 15px*/
+    color: black;
+    background-color: transparent;
+}
+/* Animerer flytting av label*/
+.floating-label-field-style + .floating-label {
+    position: absolute;
+    top: -10px;
+    display: inline-block;
+    margin: 0;
+    padding-left: 10px;
+    transition: transform .25s, opacity .25s, padding .25s ease-in-out; /*Gjør flyttinging av label mykere. Uten denne ville label bare "hoppet" opp.*/
+    transform-origin: 0 0;
+    color: black;
+}
+
+p{
+    font-weight: bold;
+    padding-bottom: 30px;
+}
+/* Styler knappen i form */
+#btn {
+    background-color: transparent;
+    font-family: Helvetica,sans-serif;
+    width: 100%;
+    height: 50px;
+    border: 2px solid Black;
+    border-radius: 10px;
     margin-bottom: 20px;
-    border: aquamarine;
-    border-radius: 5px;
-    width: 70%;
-
 }
-
-#addinfo {
-    border: azure;
+#btn:active{
+    background-color: transparent;
+    font-family: Helvetica,sans-serif;
+    font-weight: bold;
+    width: 100%;
+    height: 50px;
+    border: 3px solid Black;
     border-radius: 10px;
-    width: 200px;
-    height: 60px;
+    margin-bottom: 20px;
 }
 
 
-.btn {
-    background-color: azure;
-    height: 30px;
-    border: azure;
-    border-radius: 5px;
-
-}
 

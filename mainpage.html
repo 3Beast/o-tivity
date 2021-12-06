@@ -1,109 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
-    <title>Mainpage</title>
-</head>
-<body>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/layout.css">
+        <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
+        <title>Mainpage</title>
+    </head>
+    <body>
+        <header>
+            <input id="search" type="text" placeholder="Search for an activity...">
+            <div class="addeventbutton" onclick="location.href=`reg-event.html`"></div>
+        </header>
+        <div id="main">
+            <p id="undertitle">Activities near your area</p>
 
-    <div id="main">
-        <p id="undertitle">Activities near your area</p>
-        <div class="event">
-            <div class="bilde">
-                <img src="icons/gaming.png" width="100%" height="75px">
-            </div>
-            <div class="info">
-                <p> Activity: Gamingnight <br>
-                    Organizer: The InTelectuals<br>
-                    Address: Gimlegate 48B <br>
-                    City/Town: Kristiansand <br>
-                    Postcode: 4630 <br>
-                    Date & Time: 23.05.22 - 19:45 <br>
-                    Alcohol: No <br>
-                    Capacity: 10  </p>
-            </div>
-        </div>
-        <div class="event">
-            <div class="bilde">
-                <img src="icons/feast.png"width="100%" height="75px">
-            </div>
-            <div class="info">
-                    <p>
-                        Activity: Consert <br>
-                        Organizer: Spartacus<br>
-                        Address: Fosnaveien 102 <br>
+            <div class="event">
+                <div class="bilde">
+                    <img src="icons/gaming.png" width="100%" height="75px">
+                </div>
+                <div class="info">
+                    <p> Activity: Gamingnight <br>
+                        Organizer: The InTelectuals<br>
+                        Address: Gimlegate 48B <br>
                         City/Town: Kristiansand <br>
                         Postcode: 4630 <br>
-                        Date & Time: 13.05.22 - 18:00 <br>
-                        Alcohol: yes <br>
-                        Capacity: 10</p>
+                        Date & Time: 23.05.22 - 19:45 <br>
+                        Alcohol: No <br>
+                        Capacity: 10  </p>
+                </div>
+            </div>
+            <div class="event">
+                <div class="bilde">
+                    <img src="icons/feast.png"width="100%" height="75px">
+                </div>
+                <div class="info">
+                        <p>
+                            Activity: Consert <br>
+                            Organizer: Spartacus<br>
+                            Address: Fosnaveien 102 <br>
+                            City/Town: Kristiansand <br>
+                            Postcode: 4630 <br>
+                            Date & Time: 13.05.22 - 18:00 <br>
+                            Alcohol: yes <br>
+                            Capacity: 10</p>
+                </div>
+            </div>
+            <div class="event">
+                <div class="bilde">
+                    <img src="icons/sport.png"width="100%" height="75px">
+                </div>
+                <div class="info">
+                    <p>
+                    Activity: Volleyball <br>
+                    Organizer: The Historians<br>
+                    Address: Bystranda <br>
+                    City/Town: Kristiansand <br>
+                    Postcode: 4630 <br>
+                    Date & Time: 30.05.22 - 15:00 <br>
+                    Alcohol: No <br>
+                    Capacity: 10 </p>
+                </div>
             </div>
         </div>
-        <div class="event">
-            <div class="bilde">
-                <img src="icons/sport.png"width="100%" height="75px">
-            </div>
-            <div class="info">
-                <p>
-                Activity: Volleyball <br>
-                Organizer: The Historians<br>
-                Address: Bystranda <br>
-                City/Town: Kristiansand <br>
-                Postcode: 4630 <br>
-                Date & Time: 30.05.22 - 15:00 <br>
-                Alcohol: No <br>
-                Capacity: 10 </p>
-            </div>
-        </div>
-    </div>
-    <header>
-        <input id="search" type="text" placeholder="Search for an activity...">
-        <div class="addeventbutton" onclick="location.href=`reg-event.html`"></div>
-    </header>
 
-    <!-- Navigasjonsfelt med settings, explore, map, kalender og profil -->
-    <nav class="footer">
-        <ul><img onclick="window.location.href=`settings.html`" src="icons/settings.png"><br>Settings</ul> <!-- fix setings icon -->
-        <ul onclick="location.href='mainpage.html'"><img src="icons/explore.png"><br>Explore</ul>
-        <ul><img src="icons/map.png"><br>Map</ul>
-        <ul onclick="location.href='calendar.html'"><img src="icons/calender.png"><br>Calender</ul>
-        <ul><img src="icons/profile.png"><br>Profile</ul>
-    </nav>
-    <script>
-        let main = document.getElementById("main")
-        let newEvent = JSON.parse(window.localStorage.getItem("event")); //Gjør string fra localStorage om til objekt
+        <!-- Navigasjonsfelt med settings, explore, map, kalender og profil -->
+        <nav class="footer">
+            <ul onclick="window.location.href=`settings.html`"><img src="icons/settings.png"><br>Settings</ul> <!-- fix setings icon -->
+            <ul onclick="location.href='mainpage.html'"><img src="icons/explore.png"><br>Explore</ul>
+            <ul onclick="location.href='map.html'"><img src="icons/map.png"><br>Map</ul>
+            <ul onclick="location.href='Calendar.html'"><img src="icons/calender.png"><br>Calender</ul>
+            <ul onclick="location.href='profile.html'"><img src="icons/profile.png"><br>Profile</ul>
+        </nav>
+        <script>
+            let main = document.getElementById("main")
+            let newEvent = JSON.parse(window.localStorage.getItem("event")); //Gjør string fra localStorage om til objekt
 
-        if (localStorage.length > 0){ //hvis localstorage har innhold start funksjon addEvent
-            function addEvent(){
-                let evName = newEvent.name;//henter value ifra objekt
-                let evType = newEvent.type;
-                let evOrg = newEvent.org;
-                let evAlc = newEvent.alc;
-                let evCap = newEvent.cap;
-                let evTime = newEvent.time;
-                let evDate = newEvent.date;
-                let evAdr = newEvent.adr;
-                let evAdr2 = newEvent.adr2;
-                let evAdr3 = newEvent.adr3;
-                main.innerHTML += `<div class="event">
-            <div class="bilde">
-                <img src="icons/${evType}.png" width="100%" height="75px">
-            </div>
-            <div class="info">
-                <p class="leftp"> Activity: ${evName} <br>
-                 Organizer: ${evOrg}<br> Address: ${evAdr} <br>
-                 City/Town: ${evAdr3} <br>Postcode: ${evAdr2} <br>
-                  Date & Time: ${evDate} - ${evTime} <br>
-                   Alcohol: ${evAlc} <br> Capacity: ${evCap}  </p>
-            </div>
-        </div>`; //setter value som info til det nye event
+            if (localStorage.length > 0){ //hvis localstorage har innhold start funksjon addEvent
+                function addEvent(){
+                    let evName = newEvent.name;//henter value ifra objekt
+                    let evType = newEvent.type;
+                    let evOrg = newEvent.org;
+                    let evAlc = newEvent.alc;
+                    let evCap = newEvent.cap;
+                    let evTime = newEvent.time;
+                    let evDate = newEvent.date;
+                    let evAdr = newEvent.adr;
+                    let evAdr2 = newEvent.adr2;
+                    let evAdr3 = newEvent.adr3;
+                    main.innerHTML += `<div class="event">
+                        <div class="bilde">
+                            <img src="icons/${evType}.png" width="100%" height="75px">
+                        </div>
+                        <div class="info">
+                            <p class="leftp"> Activity: ${evName} <br>
+                                              Organizer: ${evOrg}<br>
+                                              Address: ${evAdr} <br>
+                                              City/Town: ${evAdr3} <br>
+                                              Postcode: ${evAdr2} <br>
+                                              Date & Time: ${evDate} - ${evTime} <br>
+                                              Alcohol: ${evAlc} <br>
+                                              Capacity: ${evCap}  </p>
+                        </div>
+                      </div>`; //setter value som info til det nye event
+                }
+                addEvent(newEvent);
             }
-            addEvent(newEvent);
-        }
-    </script>
-</body>
+        </script>
+    </body>
 </html>
 

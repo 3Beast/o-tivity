@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/layout.css">
+        <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
+        <title>O-Tivity - Map</title>
+    </head>
+    <body>
+        <!-- Søkefelt og legg til event knapp -->
+        <header>
+            <input id="search" type="text" placeholder="Search for an activity...">
+            <div class="addeventbutton" onclick="location.href=`reg-event.html`"></div>
+        </header>
+
+        <div id="main">
+            <iframe width="100%" height="100%" margin="0" padding="0" frameborder="0" border="0" id="gmap_canvas"
+                    src="https://maps.google.com/maps?q=&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+        </div>
+
+        <!-- Navigasjonsfelt med settings, explore, map, kalender og profil -->
+        <nav class="footer">
+            <ul onclick="window.location.href=`settings.html`"><img src="icons/settings.png"><br>Settings</ul> <!-- fix setings icon -->
+            <ul onclick="location.href='mainpage.html'"><img src="icons/explore.png"><br>Explore</ul>
+            <ul onclick="location.href='map.html'"><img src="icons/map.png"><br>Map</ul>
+            <ul onclick="location.href='Calendar.html'"><img src="icons/calender.png"><br>Calender</ul>
+            <ul onclick="location.href='profile.html'"><img src="icons/profile.png"><br>Profile</ul>
+        </nav>
+
+        <script>
+            let main = document.getElementById("main")
+            let newMarker = JSON.parse(window.localStorage.getItem("event")); //Gjør string fra localStorage om til objekt
+
+            if (localStorage.length > 0){ //hvis localstorage har innhold start funksjon addEvent
+                function addMarker(){
+                    let evAdr = newMarker.adr; //henter value ifra objekt
+                    document.getElementById("gmap_canvas").src = "https://maps.google.com/maps?q=" + evAdr + "&t=&z=13&ie=UTF8&iwloc=&output=embed"; // Henter frem google map og setter på markør ved å bruke value fra objectet evAdr
+                }
+                addMarker(newMarker);
+            }
+        </script>
+    </body>
+</html>
