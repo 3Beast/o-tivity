@@ -14,7 +14,7 @@
                 <div id="overskrift">
                     <h2>Register organization</h2>
                 </div>
-                <form method="post"> <!--action="" gjør at knappen bytter html side-->
+                <form action="mainpage.html" method="post"> <!--action="" gjør at knappen bytter html side-->
 
                     <div class="floating-label-wrap">
                         <input type="text" id="orgname" class="floating-label-field floating-label-field-style" placeholder="orgname">
@@ -48,7 +48,7 @@
                         <label for="orgconphone" class="floating-label"> Phonenumber</label>
                     </div>
 
-                    <br><button type="submit" id="btn" class="event-to-main"> Submit registration request</button>
+                    <br><button type="submit" id="btn" class="event-to-main" href="mainpage.html"> Submit registration request</button>
 
                 </form>
             </div>
@@ -72,7 +72,7 @@
             let inpOrgConEmail = document.getElementById("orgconemail");
             let inpOrgConPhone = document.getElementById("orgconphone");
 
-            /*function redirect(url) {
+            function redirect(url) {
                 var ua = navigator.userAgent.toLowerCase(),
                     isIE = ua.indexOf('msie') !== -1,
                     version = parseInt(ua.substr(4, 2), 10);
@@ -88,7 +88,7 @@
                 else {
                     window.location.href = url;
                 }
-            }*/
+            }
 
 
             function handleSubmit() {
@@ -108,12 +108,9 @@
                     orgconphone: orgconphone
                 }; // legger verdiene inn i et objekt
 
+
                 window.localStorage.setItem('org', JSON.stringify(org));//lagrer objektet som string i local storage
-               // redirect();
-                if (localStorage.length > 0){
-                    console.log("Hei")
-                    window.location.href = "mainpage.html";
-                }
+                redirect();
             }
         </script>
     </body>
