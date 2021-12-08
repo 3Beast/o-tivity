@@ -1,168 +1,102 @@
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-#main{
-    background: linear-gradient(to bottom, #96f8f7 , #26a66a) ;
+/* styler for hvordan selve siden skal se ut.
+    der blir benyttet flexbox her og utover oppgaven, fordi flexbox
+    er lettere og mer oversiktlig å bruke.
+    https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox
+*/
+    /*
+.main {
     width: 100%;
     height: 100vh;
+    background: linear-gradient(to bottom, #96f8f7 , #26a66a) ;
+    color: black;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+    */
+
+.calendar {
+    width: 375px;
+    height: 812px;
+    background-color: #10a15d;
+}
 
 .month {
     width: 100%;
-    height: 12rem;
-    background-color: #a6e3c7;
+    height: 100px;
+    background-color: #5ab088;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2rem;
+    padding: 0 16px;
     text-align: center;
-    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
 }
 
 .month i {
-    font-size: 2.5rem;
+    font-size: 40px;
     cursor: pointer;
 }
 
 .month h1 {
-    font-size: 3rem;
-    font-weight: 400;
+    font-size: 36px;
+   font-weight: 400;
     text-transform: uppercase;
-    letter-spacing: 0.2rem;
-    margin-bottom: 1rem;
-}
-
-.month p {
-    font-size: 1.6rem;
+    margin-bottom: 16px;
 }
 
 .weekdays {
     width: 100%;
-    height: 5rem;
-    padding: 0 0.4rem;
+    height: 60px;
+    padding: 0 6px;
     display: flex;
     align-items: center;
 }
 
 .weekdays div {
-    font-size: 1.5rem;
+    font-size: 20px;
     font-weight: 400;
-    letter-spacing: 0.1rem;
-    width: calc(44.7rem / 7);
-    display: flex;
+    width: calc(375px/7);
+    display:flex;
     justify-content: center;
     align-items: center;
-    text-shadow: 0 0.3rem .5rem rgba(0, 0, 0, 0.5);
 }
 
 .days {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    padding: 0.2rem;
 }
 
 .days div {
-    font-size: 1.4rem;
-    margin: 0.3rem;
-    width: calc(40.2rem / 7);
-    height: 5rem;
+    font-size: 22px;
+    margin: 5px;
+    width: calc(305px/7);
+    height: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
-    transition: background-color 0.2s;
+    padding-bottom: 100px;
+    transition: background-color .2s;
 }
 
-.days div:hover:not(.today){
-    background-color: #c2f2dc;
-    border: 0.2rem solid #777;
+.days div:hover:not(.today) {
+    background-color: #1d5935;
     cursor: pointer;
 }
 
 .prev-date,
 .next-date {
-    opacity: 0.5;
+    opacity: 0.6;
 }
 
 .today {
-    background-color: #a6e3c7;
+    background-color: #3c9170;
 }
 
-.calendar {
-    width: 45rem;
-    height: 52rem;
-    background-color: #3ec989;
-    box-shadow: 0 .5rem 3rem rgba(0, 0, 0, .4);
-}
 
-nav{
-    height: 55px;
-    width: 100%;
-    background: #4db88e;
-    text-align: center;
-    position: absolute;
-    bottom: 0;
-}
-
-ul{                             /*gjør navbar knappene til sirkler og styler dem*/
-    /* border: solid 1px black; /*fjernes når alt er ok*/
-    text-align: center;
-    width: 52px;
-    height: 52px;
-    border-radius: 50%;
-    display: inline-block;
-    padding: 0;
-    margin: 7px 5px 5px 0;
-    font-size: 0.8em;
-}
-
-ul:hover {
-    background-color: #74ae96;
-}
-
-ul:active {                 /* bør finne annen måte å vise at du klikker på knappen*/
-    background-color: #74ae96;
-    box-shadow: inset 2px 2px black;
-    opacity:40%;
-}
-
-ul:active{/*børfinneannenmåteåviseatduklikkerpåknappen*/
-    background-color:#74ae96;
-
-}
-ul img {
-    width: 25px;
-    height: 25px;
-}
-
-#mapicon{                             /*gjør navbar knappene til sirkler og styler dem*/
-    border: solid 1px black; /*fjernes når alt er ok*/
-    text-align: center;
-    width: 52px;
-    height: 52px;
-    border-radius: 50%;
-    display: inline-block;
-    padding: 0;
-    margin-bottom: 1ex;
-    font-size: 0.8em;
-    position: absolute;
-    bottom: 55px;
-    left: calc(50% - 26px);
-}
-
-#mapicon:hover {
-    background-color: #74ae96;
-}
-
-#mapicon:active { /* bør finne annen måte å vise at du klikker på knappen*/
-    background-color: #74ae96;
-    box-shadow: inset 2px 2px black;
-    opacity:40%;
-}
