@@ -1,4 +1,7 @@
 /* Styler innholdet*/
+form {
+    text-align: center;
+}
 #content {
     width:300px;
     height: max-content; /* Justerer høyden sånn at den slutter etter siste element i content*/
@@ -6,8 +9,6 @@
     margin:auto;
     background-color: #6CE0B0;
     box-sizing: border-box;
-    text-align: left;
-
 }
 /* Styler overskriften "Register organisation" og "Register new event"*/
 #overskrift {
@@ -88,26 +89,21 @@ p{
     font-weight: bold;
     padding-bottom: 30px;
 }
+
 /* Styler knappen i form */
 #btn {
     background-color: transparent;
     font-family: Helvetica,sans-serif;
-    width: 100%;
-    height: 50px;
+    width: 250px;
+    height: 75px;
     border: 2px solid Black;
     border-radius: 10px;
     margin-bottom: 20px;
+    text-decoration: none;
+    color: black;
 }
 #btn:active{
-    background-color: transparent;
-    font-family: Helvetica,sans-serif;
     font-weight: bold;
-    width: 100%;
-    height: 50px;
     border: 3px solid Black;
-    border-radius: 10px;
-    margin-bottom: 20px;
 }
-
-
 
