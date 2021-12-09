@@ -1,42 +1,43 @@
+/* Styler bakgrunnen*/
 body {
-    padding: 0;
-    margin: 0;
-    background: linear-gradient(to bottom, #96f8f7 , #6CE0B0) ;
+    padding: 0; /* Gjør sånn at det ikke blir en hvit kant lang sidene på nettleseren*/
+    margin: 0; /* Gjør sånn at det ikke blir en hvit kant lang sidene på nettleseren*/
+    background: linear-gradient(to bottom, #96f8f7 , #6CE0B0); /*Gjør bakgrunnen går fra en farge til en annen*/
     justify-content: center;
     width: 100%;
     display: flex;
 }
-
+/* Legger til bakgrunnsbilde*/
 .container {
     background-image: url("../icons/homescreen.png");
-    background-repeat: no-repeat, repeat;
+    background-repeat: no-repeat, repeat; /* Gjør at bildet i repeterer seg */
     width: 375px;
     height: 812px;
     top: 0;
     text-align: center;
 
 }
-
+/* Legger over et farget felt som er gjennomsiktig over bildet for en dusere effekt*/
 .boxopacity {
-    opacity: 0.5;
+    opacity: 0.5; /* Gjør diven delvis gjennomsiktig*/
     width:375px;
     height:812px;
-    background: linear-gradient(to bottom, #96f8f7 , #6CE0B0) ;
+    background: linear-gradient(to bottom, #96f8f7 , #6CE0B0) ; /*Gjør at det går fra en farge til en annen*/
 }
-
+/* Styler slagordet*/
 #slogan {
     width: 375px;
     position: absolute;
     top: 100px;
     text-align: center;
 }
-
+/* Plassering av logo */
 #otivityicon {
     position: absolute;
     top: 250px;
     left: calc(50% - 125px);
 }
-
+/* Styler login knappen*/
 #login {
     text-align: center;
     display: inline-block;
@@ -45,7 +46,7 @@ body {
     bottom: 780px;
     left: calc(50% - 55px);
 }
-
+/* Styler register organization knappen*/
 #regorg {
     text-align: center;
     display: inline-block;
