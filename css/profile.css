@@ -68,7 +68,7 @@ p{
 
     top: 85px;
     position: absolute;
-    clip-path: circle();
+    clip-path: circle();       /*  Gjøre bilde til en sirkel */
 }
 
 /* plasserer navnet under bildet */
