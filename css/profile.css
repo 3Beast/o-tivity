@@ -1,3 +1,4 @@
+/* styler body for å få felles layout*/
 body {
     padding: 0;
     margin: 0;
@@ -13,7 +14,7 @@ body {
     justify-content: center;
     align-items: center;
 }
-
+/* styler bilde som er i bakgrunnen av profilsiden*/
 #bakgrunn{
     position: absolute;
     left: 0px;
@@ -22,7 +23,7 @@ body {
     opacity: 60%;
 
 }
-
+/* flytter på settingsknappen fra navbaren til oppe i venstre hjørne*/
 #settings{
     position: absolute;
     padding: 0px;
@@ -33,21 +34,20 @@ body {
 
 }
 
-
+/* styler linjene for at det skal se renere ut*/
 .line {
     width: 375px;
     border-bottom: 2px solid #33B29B;
-    display: block;
     position: absolute;
-    color: #33B29B;
     top: 250px;
 }
 
+/* styler hobbies og notification teksten til en litt mindre størrelse */
 p{
     font-size: 13px;
 }
 
-
+/* plasserer hobbies og notifications slik dem er på linje med hverandre */
 #Hobbies{
     position: absolute;
     left: 10px;
@@ -61,6 +61,8 @@ p{
     top: 100px;
     text-align: center;
 }
+
+/* styler profilbilde til lise kjellsvik slik det blir en sirkel av png-en */
 #profilepicture{
     position: absolute;
     top: 70px;
@@ -68,20 +70,20 @@ p{
     height: 150px;
     border-radius: 50%;
     overflow: hidden;
-    float: none;
     display:inline-block;
     vertical-align:middle;
 }
 
+/* plasserer navnet under bildet */
 #navn{
     position: absolute;
     top: 195px;
     right: 120px;
     font-size: 25px;
     align-content: center;
-
 }
 
+/* styler navbaren */
 nav{
     height: 55px;
     width: 100%;
@@ -92,7 +94,6 @@ nav{
 }
 /* Gjør navbar knappene til sirkler og styler dem*/
 ul{
-    /* border: solid 1px black; /*fjernes når alt er ok*/
     text-align: center;
     width: 52px;
     height: 52px;
@@ -107,7 +108,7 @@ ul:hover {
     background-color: #74ae96;
 }
 
-ul:active {                 /* bør finne annen måte å vise at du klikker på knappen*/
+ul:active {
     background-color: #74ae96;
     box-shadow: inset 2px 2px black;
     opacity:40%;
@@ -117,6 +118,7 @@ ul:active{/*børfinneannenmåteåviseatduklikkerpåknappen*/
     background-color:#74ae96;
 
 }
+
 ul img {
     width: 25px;
     height: 25px;
