@@ -8,7 +8,7 @@ body {
 #main{
     background: linear-gradient(to bottom, #96f8f7 , #26a66a); /*Gjør bakgrunnen går fra en farge til en annen*/
     width: 100%;
-    height: calc(100% - 125px); /*Justerer høyden slik at den ikke er lengre en navigasjonsfeltet nederst på appen*/
+    height: calc(100% - 130px); /*Justerer høyden slik at den ikke er lengre en navigasjonsfeltet nederst på appen*/
     position: absolute;
     top: 70px;
     overflow: auto;
@@ -18,7 +18,7 @@ body {
 .main{
     background: linear-gradient(to bottom, #96f8f7 , #26a66a); /*Gjør bakgrunnen går fra en farge til en annen*/
     width: 100%;
-    height: calc(100% - 55px); /*Justerer høyden slik at den ikke er lengre en navigasjonsfeltet nederst på appen*/
+    height: calc(100% - 60px); /*Justerer høyden slik at den ikke er lengre en navigasjonsfeltet nederst på appen*/
     position: absolute;
     overflow: auto;
     text-align: center;
@@ -53,7 +53,7 @@ header input {
 }
 /* Styler navigasjonsbaren*/
 nav{
-    height: 55px;
+    height: 60px;
     width: 100%;
     background: #4db88e;
     text-align: center;
