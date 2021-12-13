@@ -3,7 +3,6 @@ body {
     padding: 0; /* Gjør sånn at det ikke blir en hvit kant lang sidene på nettleseren*/
     margin: 0; /* Gjør sånn at det ikke blir en hvit kant lang sidene på nettleseren*/
     background: linear-gradient(to bottom, #96f8f7 , #6CE0B0); /*Gjør bakgrunnen går fra en farge til en annen*/
-    justify-content: center;
     width: 100%;
     display: flex;
 }
@@ -14,9 +13,7 @@ body {
     width: 375px;
     height: 812px;
     top: 0;
-    text-align: center;
-    justify-content: center;
-
+    margin:auto;
 }
 /* Legger over et farget felt som er gjennomsiktig over bildet for en dusere effekt*/
 .boxopacity {
@@ -36,7 +33,7 @@ body {
 #otivityicon {
     position: absolute;
     top: 250px;
-    left: calc(50% - 125px);
+    margin-left: 63px;
 }
 /* Styler login knappen*/
 
@@ -44,8 +41,8 @@ body {
     text-align: center;
     display: inline-block;
     position: absolute;
-    bottom: 170px;
-    left: calc(50% - 95px);
+    top: 530px;
+    margin-left: 88px;
     background-color: transparent;
     font-family: Helvetica,sans-serif;
     width: 200px;
@@ -59,8 +56,8 @@ body {
     text-align: center;
     display: inline-block;
     position: absolute;
-    bottom: 110px;
-    left: calc(50% - 95px);
+    top: 600px;
+    margin-left: 88px;
     background-color: transparent;
     font-family: Helvetica,sans-serif;
     width: 200px;
