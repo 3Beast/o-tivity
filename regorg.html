@@ -14,7 +14,7 @@
                 <div id="overskrift">
                     <h2>Register organization</h2>
                 </div>
-                <form action="mainpage.html" method="post"> <!--action="" gjør at knappen bytter html side-->
+                <form action="mainpage.html"> <!--action="" gjør at knappen bytter html side-->
 
                     <div class="floating-label-wrap">
                         <input type="text" id="orgname" class="floating-label-field floating-label-field-style" placeholder="orgname">
@@ -48,13 +48,12 @@
                         <label for="orgconphone" class="floating-label"> Phonenumber</label>
                     </div>
 
-                    <br><button type="submit" id="btn" class="event-to-main" href="mainpage.html"> Submit registration request</button>
+                    <br><button type="submit" id="btn"> Submit registration request</button>
 
                 </form>
             </div>
         </div>
         <nav class="footer">
-            <ul onclick="window.location.href=`settings.html`"><img  src="icons/settings.png"><br>Settings</ul><!-- fix setings icon -->
             <ul onclick="window.location.href='mainpage.html'"><img src="icons/explore.png"><br>Explore</ul>
             <ul onclick="window.location.href=`map.html`"><img src="icons/map.png"><br>Map</ul>
             <ul onclick="window.location.href=`Calendar.html`"><img src="icons/calender.png"><br>Calender</ul>
@@ -71,25 +70,6 @@
             let inpOrgConName = document.getElementById("orgconname");
             let inpOrgConEmail = document.getElementById("orgconemail");
             let inpOrgConPhone = document.getElementById("orgconphone");
-
-            function redirect(url) {
-                var ua = navigator.userAgent.toLowerCase(),
-                    isIE = ua.indexOf('msie') !== -1,
-                    version = parseInt(ua.substr(4, 2), 10);
-
-                // Internet Explorer 8 and lower
-                if (isIE && version < 9) {
-                    var link = document.createElement('a');
-                    link.href = url;
-                    document.body.appendChild(link);
-                    link.click();
-                }
-                // All other browsers can use the standard window.location.href (they don't lose HTTP_REFERER like Internet Explorer 8 & lower does)
-                else {
-                    window.location.href = url;
-                }
-            }
-
 
             function handleSubmit() {
                 let orgname = inpOrgName.value; //henter verdi ifra input elemntene
@@ -110,7 +90,6 @@
 
 
                 window.localStorage.setItem('org', JSON.stringify(org));//lagrer objektet som string i local storage
-                redirect();
             }
         </script>
     </body>

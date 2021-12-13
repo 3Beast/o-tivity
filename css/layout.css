@@ -14,14 +14,13 @@ body {
     overflow: auto;
     text-align: center;
 }
-/* Styler bakgrunnen til reg-event.html og regorg.html*/
+/* Styler bakgrunnen til reg-event.html, regorg.html og profile.html*/
 .main{
     background: linear-gradient(to bottom, #96f8f7 , #26a66a); /*Gjør bakgrunnen går fra en farge til en annen*/
     width: 100%;
     height: calc(100% - 60px); /*Justerer høyden slik at den ikke er lengre en navigasjonsfeltet nederst på appen*/
     position: absolute;
     overflow: auto;
-    text-align: center;
 }
 /* Styler feltet med søkebar og pluss knapp*/
 header {

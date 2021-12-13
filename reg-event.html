@@ -83,7 +83,6 @@
 </div>
 
 <nav class="footer">
-  <ul onclick="window.location.href=`settings.html`"><img  src="icons/settings.png"><br>Settings</ul><!-- fix setings icon -->
   <ul onclick="window.location.href='mainpage.html'"><img src="icons/explore.png"><br>Explore</ul>
   <ul onclick="window.location.href=`map.html`"><img src="icons/map.png"><br>Map</ul>
   <ul onclick="window.location.href=`Calendar.html`"><img src="icons/calender.png"><br>Calender</ul>
@@ -131,7 +130,6 @@
     }; // legger verdiene inn i et objekt
 
     window.localStorage.setItem('event', JSON.stringify(event));//lagrer objektet som string i local storage
-    redirect();
   }
 </script>
 </body>

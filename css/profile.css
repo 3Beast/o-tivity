@@ -1,45 +1,35 @@
-/* styler body for å få felles layout*/
-body {
-    padding: 0;
-    margin: 0;
-    font-family: Helvetica, sans-serif;
-    box-sizing: border-box;
-}
-
-.main{
-    background: linear-gradient(to bottom, #96f8f7 , #26a66a); /*Gjør bakgrunnen går fra en farge til en annen*/
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 /* styler bilde som er i bakgrunnen av profilsiden*/
+#profile {
+    width:375px;
+    height: max-content; /* Justerer høyden sånn at den slutter etter siste element i content*/
+    margin:auto;
+    box-sizing: border-box;
+
+}
 #bakgrunn{
-    position: absolute;
+    width:375px;
+    height: 160px;
     left: 0px;
     top: 0px;
-    text-align: center;
-    opacity: 60%;
+    padding:0;
+    margin:0;
+    border-bottom: 4px solid #33B29B;
 
 }
+.bakgrunnopacity {
+    opacity: 60%; /* Gjør diven delvis gjennomsiktig*/
+    width:375px;
+    height:160px;
+}
+
 /* flytter på settingsknappen fra navbaren til oppe i venstre hjørne*/
 #settings{
     position: absolute;
-    padding: 0px;
     margin: 0px;
     top: 20px;
-    left: 0px;
-    text-align: left;
+    padding:10px;
+    float: left;
 
-}
-
-/* styler linjene for at det skal se renere ut*/
-.line {
-    width: 375px;
-    border-bottom: 2px solid #33B29B;
-    position: absolute;
-    top: 250px;
 }
 
 /* styler hobbies og notification teksten til en litt mindre størrelse */
@@ -50,76 +40,41 @@ p{
 /* plasserer hobbies og notifications slik dem er på linje med hverandre */
 #Hobbies{
     position: absolute;
-    left: 10px;
-    top: 100px;
+    top: 110px;
+    float:left;
     text-align: center;
+    margin-left: 20px;
 
 }
 #Notifications{
     position: absolute;
-    right:10px;
-    top: 100px;
+    float: right;
+    top: 110px;
     text-align: center;
+    margin-left: 280px;
 }
 
 /* styler profilbilde til lise kjellsvik slik det blir en sirkel av png-en */
 #profilepicture{
     position: absolute;
     top: 70px;
+    text-align: center;
     width: 150px;
     height: 150px;
     border-radius: 50%;
     overflow: hidden;
     display:inline-block;
-    vertical-align:middle;
+    justify-content: center;
+    margin-left:112px;
 }
 
 /* plasserer navnet under bildet */
 #navn{
     position: absolute;
-    top: 195px;
-    right: 120px;
+    top: 200px;
+    width:200px;
     font-size: 25px;
     align-content: center;
-}
-
-/* styler navbaren */
-nav{
-    height: 55px;
-    width: 100%;
-    background: #4db88e;
     text-align: center;
-    position: absolute;
-    bottom: 0;
-}
-/* Gjør navbar knappene til sirkler og styler dem*/
-ul{
-    text-align: center;
-    width: 52px;
-    height: 52px;
-    border-radius: 50%;
-    display: inline-block;
-    padding: 0;
-    margin: 7px 5px 5px 0;
-    font-size: 0.8em;
-}
-
-ul:hover {
-    background-color: #74ae96;
-}
-
-ul:active {
-    background-color: #74ae96;
-    box-shadow: inset 2px 2px black;
-    opacity:40%;
-}
-
-ul:active{/*børfinneannenmåteåviseatduklikkerpåknappen*/
-    background-color:#74ae96;
-
-}
-
-ul img {
-    width: 25px;
-    height: 25px;
+    margin-left:88px;
 }

@@ -1,7 +1,4 @@
 /* Styler innholdet*/
-form {
-    text-align: center;
-}
 #content {
     width:300px;
     height: max-content; /* Justerer høyden sånn at den slutter etter siste element i content*/
@@ -9,6 +6,7 @@ form {
     margin:auto;
     background-color: #6CE0B0;
     box-sizing: border-box;
+    text-align: left;
 }
 /* Styler overskriften "Register organisation" og "Register new event"*/
 #overskrift {

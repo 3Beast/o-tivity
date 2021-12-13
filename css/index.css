@@ -15,6 +15,7 @@ body {
     height: 812px;
     top: 0;
     text-align: center;
+    justify-content: center;
 
 }
 /* Legger over et farget felt som er gjennomsiktig over bildet for en dusere effekt*/
@@ -38,19 +39,41 @@ body {
     left: calc(50% - 125px);
 }
 /* Styler login knappen*/
+
 #login {
     text-align: center;
     display: inline-block;
-    margin-bottom: 1ex;
     position: absolute;
-    bottom: 780px;
-    left: calc(50% - 55px);
+    bottom: 170px;
+    left: calc(50% - 95px);
+    background-color: transparent;
+    font-family: Helvetica,sans-serif;
+    width: 200px;
+    height: 50px;
+    border: 2px solid Black;
+    border-radius: 10px;
+    color: black;
 }
 /* Styler register organization knappen*/
 #regorg {
     text-align: center;
     display: inline-block;
     position: absolute;
-    bottom: 750px;
-    left: calc(50% - 80px);
+    bottom: 110px;
+    left: calc(50% - 95px);
+    background-color: transparent;
+    font-family: Helvetica,sans-serif;
+    width: 200px;
+    height: 50px;
+    border: 2px solid Black;
+    border-radius: 10px;
+    color: black;
+}
+#login:active{
+    font-weight: bold;
+    border: 3px solid Black;
+}
+#regorg:active{
+    font-weight: bold;
+    border: 3px solid Black;
 }
