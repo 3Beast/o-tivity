@@ -5,6 +5,7 @@ body {
     background: linear-gradient(to bottom, #96f8f7 , #6CE0B0); /*Gjør bakgrunnen går fra en farge til en annen*/
     width: 100%;
     display: flex;
+    overflow:hidden;
 }
 /* Legger til bakgrunnsbilde*/
 .container {
