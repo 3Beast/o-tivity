@@ -4,12 +4,11 @@
     box-sizing: border-box;
 }
 
-/* styler for hvordan selve siden skal se ut.
-    der blir benyttet flexbox her og utover oppgaven, fordi flexbox
+/* det blir benyttet flexbox her og utover oppgaven, fordi flexbox
     er lettere og mer oversiktlig å bruke.
     https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox
 */
-
+/* bakgrunn, egt ikke særlig relevant mtp at kalender dekker hele skjermen */
 .main {
     width: 100%;
     height: 100vh;
@@ -18,15 +17,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
-
+/* styler kalender */
 .calendar {
     width: 375px;
     height: 812px;
     background-color: #10a15d;
 }
 
+/* styler måned display */
 .month {
     width: 100%;
     height: 100px;
@@ -50,14 +51,15 @@
     margin-bottom: 16px;
 }
 
+/* styler ukedager, og lager en flexbox */
 .weekdays {
     width: 100%;
-    height: 60px;
-    padding: 0 6px;
+    height: 50px;
     display: flex;
     align-items: center;
 }
 
+/* styler selve dagene, mon, tue, wed osv */
 .weekdays div {
     font-size: 20px;
     font-weight: 400;
@@ -67,40 +69,48 @@
     align-items: center;
 }
 
+/* styler dagene i en flexbox */
 .days {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
 }
 
+/* styler selve dagene og hvordan de skal se ut i flexboxen */
 .days div {
+    padding-top: 50px;
     font-size: 22px;
     margin: 5px;
     width: calc(305px/7);
-    height: 10px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
     transition: background-color .2s;
 }
 
+/* ikke særlig relevant mtp at dette er en app, men greit å se en pointer
+    siden dere skal bruke nettleser */
 .days div:hover:not(.today) {
     background-color: #1d5935;
     cursor: pointer;
 }
 
+/* gjør at dager fra forrige måned eller imøtekommende måned, har litt opacity på seg */
 .prev-date,
 .next-date {
     opacity: 0.6;
 }
 
+/* markerer for selve dagen vi er i */
 .today {
     background-color: #3c9170;
 }
 
+/* nav-bar er snakket om tidligere i andre stylesheets */
 nav{
-    height: 55px;
+    height: 60px;
     width: 100%;
     background: #4db88e;
     text-align: center;
