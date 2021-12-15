@@ -2,31 +2,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 /* det blir benyttet flexbox her og utover oppgaven, fordi flexbox
     er lettere og mer oversiktlig å bruke.
     https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox
 */
-/* bakgrunn, egt ikke særlig relevant mtp at kalender dekker hele skjermen */
-.main {
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(to bottom, #96f8f7 , #26a66a) ;
-    color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-}
-
 /* styler kalender */
 .calendar {
     width: 375px;
-    height: 812px;
+    height: 100%;
     background-color: #10a15d;
+    margin: auto;
+    box-sizing: border-box;
 }
-
 /* styler måned display */
 .month {
     width: 100%;
@@ -105,59 +95,6 @@
 
 /* markerer for selve dagen vi er i */
 .today {
-
     background-color: #3c9170;
-}
-
-/* nav-bar er snakket om tidligere i andre stylesheets */
-nav{
-    height: 60px;
-    width: 100%;
-    background: #4db88e;
-    text-align: center;
-    position: absolute;
-    bottom: 0;
-}
-
-ul{
-    text-align: center;
-    width: 52px;
-    height: 52px;
-    border-radius: 50%;
-    display: inline-block;
-    padding: 0;
-    margin: 7px 5px 5px 0;
-    font-size: 0.8em;
-}
-
-ul:hover {
-    background-color: #74ae96;
-}
-
-ul:active {
-    background-color: #74ae96;
-    box-shadow: inset 2px 2px black;
-    opacity:40%;
-}
-
-ul:active{
-    background-color:#74ae96;
-
-}
-ul img {
-    width: 25px;
-    height: 25px;
-}
-
-
-
-    background-color: #a6e3c7;
-}
-
-.calendar {
-    width: 45rem;
-    height: 52rem;
-    background-color: #3ec989;
-    box-shadow: 0 .5rem 3rem rgba(0, 0, 0, .4);
 }
 

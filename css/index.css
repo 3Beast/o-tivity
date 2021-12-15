@@ -6,6 +6,7 @@ body {
     width: 100%;
     display: flex;
     overflow:hidden;
+    font-family: Helvetica, sans-serif;
 }
 /* Legger til bakgrunnsbilde*/
 .container {
@@ -24,7 +25,6 @@ body {
     background: linear-gradient(to bottom, #96f8f7 , #6CE0B0) ; /*Gjør at det går fra en farge til en annen*/
 }
 /* Styler slagordet*/
-
 #slogan {
     width: 375px;
     position: absolute;
@@ -32,7 +32,6 @@ body {
     text-align: center;
 }
 /* Plassering av logo */
-
 #otivityicon {
     position: absolute;
     top: 250px;
@@ -44,8 +43,6 @@ body {
     text-align: center;
     display: inline-block;
     position: absolute;
-    bottom: -150px;
-    left: calc(50% - 55px);
     top: 530px;
     margin-left: 88px;
     background-color: transparent;
@@ -55,15 +52,12 @@ body {
     border: 2px solid Black;
     border-radius: 10px;
     color: black;
-
 }
 /* Styler register organization knappen*/
 #regorg {
     text-align: center;
     display: inline-block;
     position: absolute;
-    bottom: -200px;
-    left: calc(50% - 80px);
     top: 600px;
     margin-left: 88px;
     background-color: transparent;
@@ -74,12 +68,10 @@ body {
     border-radius: 10px;
     color: black;
 }
-
 #login:active{
     font-weight: bold;
     border: 3px solid Black;
 }
-
 #regorg:active{
     font-weight: bold;
     border: 3px solid Black;
