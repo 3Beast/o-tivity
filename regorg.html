@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="css/layout.css">
+        <link rel="stylesheet" href="css/form.css">
+        <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
+        <title>O-Tivity - Register organization</title>
+    </head>
+    <body>
+        <div class="main">
+            <div id="content">
+                <div id="overskrift">
+                    <h2>Register organization</h2>
+                </div>
+                <form action="mainpage.html"> <!--action="" gjør at knappen bytter html side-->
+
+                    <div class="floating-label-wrap">
+                        <input type="text" id="orgname" class="floating-label-field floating-label-field-style" placeholder="orgname">
+                        <label for="orgname" class="floating-label"> Organization name</label>
+                    </div>
+
+                    <div class="floating-label-wrap">
+                        <input type="url" id="orgurl" class="floating-label-field floating-label-field-style" placeholder="orgurl">
+                        <label for="orgurl" class="floating-label"> Organization site</label>
+                    </div>
+
+                    <div class="floating-label-wrap">
+                        <textarea id="orginfo" class="floating-label-field floating-label-field-style" placeholder="orginfo"></textarea>
+                        <label for="orginfo" class="floating-label"> Organization information</label>
+                    </div>
+
+                    <p>Contact information:</p>
+
+                    <div class="floating-label-wrap">
+                        <input type="text" id="orgconname" class="floating-label-field floating-label-field-style" placeholder="orgconname">
+                        <label for="orgconname" class="floating-label"> Name</label>
+                    </div>
+
+                    <div class="floating-label-wrap">
+                        <input type="email" id="orgconemail" class="floating-label-field floating-label-field-style" placeholder="orgconemail">
+                        <label for="orgconemail" class="floating-label"> Email</label>
+                    </div>
+
+                    <div class="floating-label-wrap">
+                        <input type="number" id="orgconphone" class="floating-label-field floating-label-field-style" placeholder="orgnconphone">
+                        <label for="orgconphone" class="floating-label"> Phonenumber</label>
+                    </div>
+
+                    <br><button type="submit" id="btn"> Submit registration request</button>
+
+                </form>
+            </div>
+        </div>
+        <nav class="footer">
+            <ul onclick="window.location.href='mainpage.html'"><img src="icons/explore.png"><br>Explore</ul>
+            <ul onclick="window.location.href=`map.html`"><img src="icons/map.png"><br>Map</ul>
+            <ul onclick="window.location.href=`Calendar.html`"><img src="icons/calender.png"><br>Calender</ul>
+            <ul onclick="window.location.href=`profile.html`"><img src="icons/profile.png"><br>Profile</ul>
+        </nav>
+
+        <script>
+            let btnSubmit = document.getElementById("btn");
+            btnSubmit.addEventListener("click", handleSubmit); //sier at ved click skal button kjøre funksjon handle submit
+
+            let inpOrgName = document.getElementById("orgname"); // kobler input elementene til JS
+            let inpOrgUrl = document.getElementById("orgurl");
+            let inpOrgInfo = document.getElementById("orginfo");
+            let inpOrgConName = document.getElementById("orgconname");
+            let inpOrgConEmail = document.getElementById("orgconemail");
+            let inpOrgConPhone = document.getElementById("orgconphone");
+
+            function handleSubmit() {
+                let orgname = inpOrgName.value; //henter verdi ifra input elemntene
+                let orgurl = inpOrgUrl.value;
+                let orginfo = inpOrgInfo.value;
+                let orgconname = inpOrgConName.value;
+                let orgconemail = inpOrgConEmail.value;
+                let orgconphone = inpOrgConPhone.value;
+
+                let org = {
+                    orgname: orgname,
+                    orgurl: orgurl,
+                    orginfo: orginfo,
+                    orgnconname: orgconname,
+                    orgconemail: orgconemail,
+                    orgconphone: orgconphone
+                }; // legger verdiene inn i et objekt
+
+
+                window.localStorage.setItem('org', JSON.stringify(org));//lagrer objektet som string i local storage
+            }
+        </script>
+    </body>
+</html>

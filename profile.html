@@ -1,39 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Profile</title>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/profile.css">
+    <link rel="stylesheet" href="css/layout.css">
     <link rel="icon" href="icons">
+    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
+    <title>O-Tivity - Profile</title>
+
 
 </head>
 <body>
-    <div class="profile">
-        <p> Profile </p>
-            <div id="Hobbies">
-                <img src="icons/hobbies.png" width="50%" height="360px">
-                    <p> Hobbies </p>
+    <div class="main">
+        <div id="profile">
+            <div id="settings">
+                <ul onclick="window.location.href=`settings.html`"><img  src="icons/settings.png"><br>Settings</ul>
             </div>
-                <div id="Notifications">
-                    <img src="icons/notifications.png" height="360px" width="50%">
-                        <p>Notifications</p>
-                </div>
-
-                    <div id="profilepicture">
-                        <img src="icons/Profilepicture.png" height="360px" width="50%">
-                            <p> Profilnavn </p>
-                    </div>
-
-            <img id="mapicon" src="icons/map.png">
-            <nav>
-                <ul><img src="icons/settings.png"><br>Settings</ul>
-                <ul><img src="icons/explore.png"><br>Explore</ul>
-                <ul><img src="icons/calender.png"><br>Calender</ul>
-                <ul><img src="icons/profile.png"><br>Profile</ul>
-            </nav>
+            <div id="bakgrunn">         <!-- plasserer bakgrunnsbilde i body og bestemmer størrelsen -->
+                <img src="icons/image.png" width="375px" height="160px">
+            </div>
+            <div class="boxopacity"></div>
+            <span class="line"></span>
+            <!-- putter inn ikonene og tekst til ikonene -->
+            <p id="navn"> Lise Kjellsvik</p>
+            <div id="Hobbies">
+                <img src="icons/Hobbies.png" width="100%" height="75px">
+                <p> Hobbies </p>
+            </div>
+            <div id="Notifications">
+                <img src="icons/Notifications.png" height="75px" width="100%">
+                <p>Notifications</p>
+            </div>
+            <div id="profilepicture">
+                <img src="icons/harrypotter.png" height="200px" width="100%">
+            </div>
         </div>
-</div>
+    </div>
+    <!-- Navigasjonsfelt med settings, explore, map, kalender og profil -->
+    <nav class="footer">
+        <ul onclick="window.location.href='mainpage.html'"><img src="icons/explore.png"><br>Explore</ul>
+        <ul onclick="window.location.href=`map.html`"><img src="icons/map.png"><br>Map</ul>
+        <ul onclick="window.location.href=`Calendar.html`"><img src="icons/calender.png"><br>Calender</ul>
+        <ul onclick="window.location.href=`profile.html`"><img src="icons/profile.png"><br>Profile</ul>
+    </nav>
+
+
+
+
+
+
 
 </body>
 

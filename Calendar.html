@@ -4,12 +4,20 @@
     <meta name="Viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>Calendar</title>
+    <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/calendar.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <!-- definerer div for main fordi det er her alt skjer -->
     <div class="main">
+
+    <header>
+        <input id="search" type="text" placeholder="Search for an activity...">
+        <div class="addeventbutton" onclick="location.href=`reg-event.html`"></div>
+    </header>
+    <div id="main">
+
         <div class="calendar">
             <div class="month">
                 <i class="fas fa-angle-left prev">
@@ -41,6 +49,13 @@
         </nav>
     </div>
 
+    <!-- Navigasjonsfelt med settings, explore, map, kalender og profil -->
+    <nav class="footer">
+        <ul onclick="window.location.href='mainpage.html'"><img src="icons/explore.png"><br>Explore</ul>
+        <ul onclick="window.location.href=`map.html`"><img src="icons/map.png"><br>Map</ul>
+        <ul onclick="window.location.href=`Calendar.html`"><img src="icons/calender.png"><br>Calender</ul>
+        <ul onclick="window.location.href=`profile.html`"><img src="icons/profile.png"><br>Profile</ul>
+    </nav>
 
     <script src="calendar.js"></script>
 </body>

@@ -1,28 +1,29 @@
+/* Styler bakgrunnen*/
 body {
-    padding: 0;
-    margin: 0;
-    background: linear-gradient(to bottom, #96f8f7 , #6CE0B0) ;
-    justify-content: center;
+    padding: 0; /* Gjør sånn at det ikke blir en hvit kant lang sidene på nettleseren*/
+    margin: 0; /* Gjør sånn at det ikke blir en hvit kant lang sidene på nettleseren*/
+    background: linear-gradient(to bottom, #96f8f7 , #6CE0B0); /*Gjør bakgrunnen går fra en farge til en annen*/
     width: 100%;
     display: flex;
+    overflow:hidden;
 }
-
+/* Legger til bakgrunnsbilde*/
 .container {
     background-image: url("../icons/homescreen.png");
-    background-repeat: no-repeat, repeat;
+    background-repeat: no-repeat, repeat; /* Gjør at bildet i repeterer seg */
     width: 375px;
     height: 812px;
     top: 0;
-    text-align: center;
-
+    margin:auto;
 }
-
+/* Legger over et farget felt som er gjennomsiktig over bildet for en dusere effekt*/
 .boxopacity {
-    opacity: 0.5;
+    opacity: 0.5; /* Gjør diven delvis gjennomsiktig*/
     width:375px;
     height:812px;
-    background: linear-gradient(to bottom, #96f8f7 , #6CE0B0) ;
+    background: linear-gradient(to bottom, #96f8f7 , #6CE0B0) ; /*Gjør at det går fra en farge til en annen*/
 }
+/* Styler slagordet*/
 
 #slogan {
     width: 375px;
@@ -30,26 +31,56 @@ body {
     top: 100px;
     text-align: center;
 }
+/* Plassering av logo */
 
 #otivityicon {
     position: absolute;
     top: 250px;
-    left: calc(50% - 125px);
+    margin-left: 63px;
 }
+/* Styler login knappen*/
 
 #login {
     text-align: center;
     display: inline-block;
-    margin-bottom: 1ex;
     position: absolute;
     bottom: -150px;
     left: calc(50% - 55px);
-}
+    top: 530px;
+    margin-left: 88px;
+    background-color: transparent;
+    font-family: Helvetica,sans-serif;
+    width: 200px;
+    height: 50px;
+    border: 2px solid Black;
+    border-radius: 10px;
+    color: black;
 
+}
+/* Styler register organization knappen*/
 #regorg {
     text-align: center;
     display: inline-block;
     position: absolute;
     bottom: -200px;
     left: calc(50% - 80px);
+    top: 600px;
+    margin-left: 88px;
+    background-color: transparent;
+    font-family: Helvetica,sans-serif;
+    width: 200px;
+    height: 50px;
+    border: 2px solid Black;
+    border-radius: 10px;
+    color: black;
+}
+
+#login:active{
+    font-weight: bold;
+    border: 3px solid Black;
+}
+
+#regorg:active{
+    font-weight: bold;
+    border: 3px solid Black;
 }

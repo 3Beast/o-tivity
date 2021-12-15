@@ -1,122 +1,44 @@
-body {
-    padding: 0;
-    margin: 0;
-}
-
-#main{
-    background: linear-gradient(to bottom, #96f8f7 , #26a66a) ;
-    width: 100%;
-    height: calc(100% - 55px); /*placeholder*/
-    position: absolute;
-    top: 0;
-    font-family: helvetica;
-    overflow: auto;
-    text-align: center;
-}
-
-nav{
-    height: 55px;
-    width: 100%;
-    background: #4db88e;
-    text-align: center;
-    position: absolute;
-    bottom: 0;
-}
-
-ul{                             /*gjør navbar knappene til sirkler og styler dem*/
-    /* border: solid 1px black; /*fjernes når alt er ok*/
-    text-align: center;
-    width: 52px;
-    height: 52px;
-    border-radius: 50%;
-    display: inline-block;
-    padding: 0;
-    margin: 7px 5px 5px 0;
-    font-size: 0.8em;
-}
-
-ul:hover {
-    background-color: #74ae96;
-}
-
-ul:active {                 /* bør finne annen måte å vise at du klikker på knappen*/
-    background-color: #74ae96;
-    box-shadow: inset 2px 2px black;
-    opacity:40%;
-}
-
-ul:active{/*børfinneannenmåteåviseatduklikkerpåknappen*/
-    background-color:#74ae96;
+/* Styler menylisten*/
+#settingsmenu {
+    width: 300px;
+    height: max-content; /* Justerer høyden sånn at den slutter etter siste element i content*/
+    margin:auto;
+    box-sizing: border-box;
+    text-align: left;
+    padding: 0 0 20px 25px;
 
 }
-ul img {
-    width: 25px;
-    height: 25px;
-}
-
-
-#mapicon{                             /*gjør navbar knappene til sirkler og styler dem*/
-    border: solid 1px black; /*fjernes når alt er ok*/
-    text-align: center;
-    width: 52px;
-    height: 52px;
-    border-radius: 50%;
-    display: inline-block;
-    padding: 0;
-    margin-bottom: 1ex;
-    font-size: 0.8em;
-    position: absolute;
-    bottom: 55px;
-    left: calc(50% - 26px);
-}
-
-#mapicon:hover {
-    background-color: #74ae96;
-}
-
-#mapicon:active { /* bør finne annen måte å vise at du klikker på knappen*/
-    background-color: #74ae96;
-    box-shadow: inset 2px 2px black;
-    opacity:40%;
-}
-
-ol {
+.settingitems {
     list-style: none;
     text-align: left;
-}
+    width: 300px;
+    padding: 10px 0 10px 0;
+    font-weight: bold;
 
-li {
-    padding-top: 20px;
 }
-
+/* Justerer linjen mellom menuitems*/
 .line {
-    width: 295px;
+    width: 250px;
     border-bottom: 2px solid #33B29B;
     display: block;
-    padding-top: 20px;
-}
 
-.searchbar {
-    display: flex;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: center;
-    padding-top: 20px;
 }
+/* Styler logout knappen*/
+.logoutbtn{
+    width: 300px;
+    height: 100px;
+    background-color: transparent;
+    border: none;
+    margin: auto;
+    vertical-align: middle;
+    font-size: 20px;
 
-.searchbar input {
-    border-radius: 10px;
-    height: 30px;
-    width: 250px;
-    display: flex;
 }
-
-.logoutbtn {
+#logoutimg {
     height: 35px;
     width: 35px;
-    border: none;
-    background-size: cover;
-    background-image: url("../icons/logout.png");
-    display: flex;
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 10px;
 
 }
