@@ -4,9 +4,8 @@
     height: max-content; /* Justerer høyden sånn at den slutter etter siste element i content*/
     margin:auto;
     box-sizing: border-box;
-
 }
-#bakgrunn{
+#bakgrunn {
     width:375px;
     height: 160px;
     left: 0px;
@@ -14,7 +13,6 @@
     padding:0;
     margin:0;
     border-bottom: 4px solid #33B29B;
-
 }
 .bakgrunnopacity {
     opacity: 60%; /* Gjør diven delvis gjennomsiktig*/
@@ -23,30 +21,28 @@
 }
 
 /* flytter på settingsknappen fra navbaren til oppe i venstre hjørne*/
-#settings{
+#settings {
     position: absolute;
     margin: 0px;
     top: 20px;
     padding:10px;
     float: left;
-
 }
 
 /* styler hobbies og notification teksten til en litt mindre størrelse */
-p{
+p {
     font-size: 13px;
 }
 
 /* plasserer hobbies og notifications slik dem er på linje med hverandre */
-#Hobbies{
+#Hobbies {
     position: absolute;
     top: 110px;
     float:left;
     text-align: center;
     margin-left: 20px;
-
 }
-#Notifications{
+#Notifications {
     position: absolute;
     float: right;
     top: 110px;
@@ -55,7 +51,7 @@ p{
 }
 
 /* styler profilbilde til lise kjellsvik slik det blir en sirkel av png-en */
-#profilepicture{
+#profilepicture {
     position: absolute;
     top: 70px;
     text-align: center;
@@ -69,7 +65,7 @@ p{
 }
 
 /* plasserer navnet under bildet */
-#navn{
+#navn {
     position: absolute;
     top: 200px;
     width:200px;

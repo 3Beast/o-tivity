@@ -1,136 +1,136 @@
 <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta charset="UTF-8">
-      <link rel="stylesheet" href="css/layout.css">
-      <link rel="stylesheet" href="css/form.css">
-      <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
-      <title>O-Tivity - Register event</title>
-    </head>
-    <body>
-      <div class="main">
-        <div id="content">
-          <div id="overskrift">
-            <h2>Register new event</h2>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="shortcut icon" href="icons/favicon.ico" type="image/x-icon">
+    <title>O-Tivity - Register event</title>
+  </head>
+  <body>
+    <div class="main">
+      <div id="content">
+        <div id="overskrift">
+          <h2>Register new event</h2>
+        </div>
+
+        <form action="mainpage.html"> <!--action="" gjør at knappen bytter html side-->
+
+          <div class="floating-label-wrap">
+            <input id="eventname" type="text" class="floating-label-field floating-label-field-style" placeholder="eventname">
+            <label for="eventname" class="floating-label"> Event title</label>
           </div>
 
-          <form action="mainpage.html"> <!--action="" gjør at knappen bytter html side-->
+          <div class="floating-label-wrap">
+            <input type="text" id="type"class="floating-label-field floating-label-field-style" placeholder="type">
+            <label for="type" class="floating-label"> Type of event</label>
+          </div>
 
-            <div class="floating-label-wrap">
-              <input id="eventname" type="text" class="floating-label-field floating-label-field-style" placeholder="eventname">
-              <label for="eventname" class="floating-label"> Event title</label>
-            </div>
+          <div class="floating-label-wrap">
+            <input type="text" id="org" class="floating-label-field floating-label-field-style" placeholder="org">
+            <label for="org" class="floating-label"> Host/organizer name</label>
+          </div>
 
-            <div class="floating-label-wrap">
-              <input type="text" id="type"class="floating-label-field floating-label-field-style" placeholder="type">
-              <label for="type" class="floating-label"> Type of event</label>
-            </div>
+          <div class="floating-label-wrap">
+            <select id="alcohol" class="floating-label-field floating-label-field-style">
+              <option value="No">No</option>
+              <option value="Yes">Yes</option>
+            </select>
+            <label class="floating-label"> Permit alcohol use at event?</label><br>
+          </div>
 
-            <div class="floating-label-wrap">
-              <input type="text" id="org" class="floating-label-field floating-label-field-style" placeholder="org">
-              <label for="org" class="floating-label"> Host/organizer name</label>
-            </div>
+          <div class="floating-label-wrap">
+            <input type="date" id="date" class="floating-label-field floating-label-field-style" placeholder="date">
+            <label for="date" class="floating-label"> Date</label>
+          </div>
 
-            <div class="floating-label-wrap">
-              <select id="alcohol" class="floating-label-field floating-label-field-style">
-                <option value="No">No</option>
-                <option value="Yes">Yes</option>
-              </select>
-              <label class="floating-label"> Permit alcohol use at event?</label><br>
-            </div>
+          <div class="floating-label-wrap">
+            <input type="time" id="time" class="floating-label-field floating-label-field-style">
+            <label for="time" class="floating-label"> Time</label>
+          </div>
 
-            <div class="floating-label-wrap">
-              <input type="date" id="date" class="floating-label-field floating-label-field-style" placeholder="date">
-              <label for="date" class="floating-label"> Date</label>
-            </div>
+          <div class="floating-label-wrap">
+            <input type="text" placeholder="Street name + number" id="adr" class="floating-label-field floating-label-field-style">
+            <label for="adr" class="floating-label">Address</label>
+          </div>
 
-            <div class="floating-label-wrap">
-              <input type="time" id="time" class="floating-label-field floating-label-field-style">
-              <label for="time" class="floating-label"> Time</label>
-            </div>
+          <div class="floating-label-wrap">
+            <input type="number" placeholder="Postcode" min="1000" max="9999" id="adr2" class="floating-label-field floating-label-field-style">
+            <label for="adr" class="floating-label">Zipcode</label>
+          </div>
 
-            <div class="floating-label-wrap">
-              <input type="text" placeholder="Street name + number" id="adr" class="floating-label-field floating-label-field-style">
-              <label for="adr" class="floating-label">Address</label>
-            </div>
+          <div class="floating-label-wrap">
+            <input type="text" placeholder="City/town" id="adr3" class="floating-label-field floating-label-field-style">
+            <label for="adr" class="floating-label">City</label>
+          </div>
 
-            <div class="floating-label-wrap">
-              <input type="number" placeholder="Postcode" min="1000" max="9999" id="adr2" class="floating-label-field floating-label-field-style">
-              <label for="adr" class="floating-label">Zipcode</label>
-            </div>
+          <div class="floating-label-wrap">
+            <input type="number" min="1" id="capacity" class="floating-label-field floating-label-field-style" placeholder="capacity">
+            <label for="capacity" class="floating-label">Event capacity</label>
+          </div>
 
-            <div class="floating-label-wrap">
-              <input type="text" placeholder="City/town" id="adr3" class="floating-label-field floating-label-field-style">
-              <label for="adr" class="floating-label">City</label>
-            </div>
-
-            <div class="floating-label-wrap">
-              <input type="number" min="1" id="capacity" class="floating-label-field floating-label-field-style" placeholder="capacity">
-              <label for="capacity" class="floating-label">Event capacity</label>
-            </div>
-
-            <div class="floating-label-wrap">
-              <textarea id="addinfo" class="floating-label-field floating-label-field-style" placeholder="addinfo"></textarea>
-              <label for="Addinfo" class="floating-label"> Additional information</label>
-            </div>
+          <div class="floating-label-wrap">
+            <textarea id="addinfo" class="floating-label-field floating-label-field-style" placeholder="addinfo"></textarea>
+            <label for="Addinfo" class="floating-label"> Additional information</label>
+          </div>
 
 
-      <br><button id="btn" type="submit"> Create Event</button>
+          <br><button id="btn" type="submit"> Create Event</button>
 
-    </form>
-  </div>
-</div>
+        </form>
+      </div>
+    </div>
+    <!-- Navigasjonsfelt med explore, map, kalender og profil -->
+    <nav class="footer">
+      <ul onclick="window.location.href='mainpage.html'"><img src="icons/explore.png"><br>Explore</ul>
+      <ul onclick="window.location.href=`map.html`"><img src="icons/map.png"><br>Map</ul>
+      <ul onclick="window.location.href=`Calendar.html`"><img src="icons/calender.png"><br>Calender</ul>
+      <ul onclick="window.location.href=`profile.html`"><img src="icons/profile.png"><br>Profile</ul>
+    </nav>
 
-<nav class="footer">
-  <ul onclick="window.location.href='mainpage.html'"><img src="icons/explore.png"><br>Explore</ul>
-  <ul onclick="window.location.href=`map.html`"><img src="icons/map.png"><br>Map</ul>
-  <ul onclick="window.location.href=`Calendar.html`"><img src="icons/calender.png"><br>Calender</ul>
-  <ul onclick="window.location.href=`profile.html`"><img src="icons/profile.png"><br>Profile</ul>
-</nav>
+    <script>
+      let btnSubmit = document.getElementById("btn");
+      btnSubmit.addEventListener("click", handleSubmit); //sier at ved click skal button kjøre funksjon handle submit
 
-<script>
-  let btnSubmit = document.getElementById("btn");
-  btnSubmit.addEventListener("click", handleSubmit); //sier at ved click skal button kjøre funksjon handle submit
+      let inpEvname = document.getElementById("eventname"); // kobler input elementene til JS
+      let inpType = document.getElementById("type");
+      let inpOrg = document.getElementById("org");
+      let inpAlc = document.getElementById("alcohol");
+      let inpDate = document.getElementById("date");
+      let inpCap = document.getElementById("capacity");
+      let inpTime = document.getElementById("time");
+      let inpAdr = document.getElementById("adr");
+      let inpAdr2 = document.getElementById("adr2");
+      let inpAdr3 = document.getElementById("adr3");
 
-  let inpEvname = document.getElementById("eventname"); // kobler input elementene til JS
-  let inpType = document.getElementById("type");
-  let inpOrg = document.getElementById("org");
-  let inpAlc = document.getElementById("alcohol");
-  let inpDate = document.getElementById("date");
-  let inpCap = document.getElementById("capacity");
-  let inpTime = document.getElementById("time");
-  let inpAdr = document.getElementById("adr");
-  let inpAdr2 = document.getElementById("adr2");
-  let inpAdr3 = document.getElementById("adr3");
+      function handleSubmit() {
+        let evname = inpEvname.value; //henter verdi ifra input elemntene
+        let type = inpType.value;
+        let org = inpOrg.value;
+        let alc = inpAlc.value;
+        let time = inpTime.value;
+        let date = inpDate.value;
+        let adr = inpAdr.value;
+        let adr2 = inpAdr2.value;
+        let adr3 = inpAdr3.value;
+        let cap = inpCap.value;
 
-  function handleSubmit() {
-    let evname = inpEvname.value; //henter verdi ifra input elemntene
-    let type = inpType.value;
-    let org = inpOrg.value;
-    let alc = inpAlc.value;
-    let time = inpTime.value;
-    let date = inpDate.value;
-    let adr = inpAdr.value;
-    let adr2 = inpAdr2.value;
-    let adr3 = inpAdr3.value;
-    let cap = inpCap.value;
+        let event = {
+          name:evname,
+          type:type,
+          org:org,
+          date:date,
+          cap:cap,
+          adr:adr,
+          adr2:adr2,
+          adr3:adr3,
+          alc:alc,
+          time:time
+        }; // legger verdiene inn i et objekt
 
-    let event = {
-      name:evname,
-      type:type,
-      org:org,
-      date:date,
-      cap:cap,
-      adr:adr,
-      adr2:adr2,
-      adr3:adr3,
-      alc:alc,
-      time:time
-    }; // legger verdiene inn i et objekt
-
-    window.localStorage.setItem('event', JSON.stringify(event));//lagrer objektet som string i local storage
-  }
-</script>
-</body>
+        window.localStorage.setItem('event', JSON.stringify(event));//lagrer objektet som string i local storage
+      }
+    </script>
+  </body>
 </html>

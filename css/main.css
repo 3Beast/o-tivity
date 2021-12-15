@@ -17,7 +17,7 @@ p {
     padding-left: 5px;
 }
 /* Justerer størrelsen på bilde slik at det passer inn i event kortet*/
-.bilde{
+.bilde {
     width: 100%;
     position:relative;
     height: 75px;
@@ -34,7 +34,7 @@ p {
     padding-top: 5px;
     font-size: 16px;
 }
-.info p{
+.info p {
     display: inline-block;
     margin: 0;
 }
@@ -44,7 +44,7 @@ p {
     position: absolute;
     padding-right: 5px;
 }
-.bilde img{
+.bilde img {
     border-radius: 10px;
     object-fit: none;
 }

@@ -5,7 +5,7 @@ body {
     font-family: Helvetica, sans-serif;
 }
 /* Styler bakgrunnen*/
-#main{
+#main {
     background: linear-gradient(to bottom, #96f8f7 , #26a66a); /*Gjør bakgrunnen går fra en farge til en annen*/
     width: 100%;
     height: calc(100% - 130px); /*Justerer høyden slik at den ikke er lengre en navigasjonsfeltet nederst på appen*/
@@ -15,7 +15,7 @@ body {
     text-align: center;
 }
 /* Styler bakgrunnen til reg-event.html, regorg.html og profile.html*/
-.main{
+.main {
     background: linear-gradient(to bottom, #96f8f7 , #26a66a); /*Gjør bakgrunnen går fra en farge til en annen*/
     width: 100%;
     height: calc(100% - 60px); /*Justerer høyden slik at den ikke er lengre en navigasjonsfeltet nederst på appen*/
@@ -51,7 +51,7 @@ header input {
     display: flex;
 }
 /* Styler navigasjonsbaren*/
-nav{
+nav {
     height: 60px;
     width: 100%;
     background: #4db88e;
@@ -60,8 +60,7 @@ nav{
     bottom: 0;
 }
 /* Gjør navbar knappene til sirkler og styler dem*/
-ul{
-    /* border: solid 1px black; /*fjernes når alt er ok*/
+ul {
     text-align: center;
     width: 52px;
     height: 52px;
@@ -76,13 +75,13 @@ ul:hover {
     background-color: #74ae96;
 }
 
-ul:active {                 /* bør finne annen måte å vise at du klikker på knappen*/
+ul:active {
     background-color: #74ae96;
     box-shadow: inset 2px 2px black;
     opacity:40%;
 }
 
-ul:active{/*børfinneannenmåteåviseatduklikkerpåknappen*/
+ul:active {
     background-color:#74ae96;
 
 }
@@ -92,7 +91,7 @@ ul img {
 }
 /*gjør navbar knappene til sirkler og styler dem*/
 #mapicon {
-    border: solid 1px black; /*fjernes når alt er ok*/
+    border: solid 1px black;
     text-align: center;
     width: 52px;
     height: 52px;
@@ -110,7 +109,7 @@ ul img {
     background-color: #74ae96;
 }
 
-#mapicon:active { /* bør finne annen måte å vise at du klikker på knappen*/
+#mapicon:active {
     background-color: #74ae96;
     box-shadow: inset 2px 2px black;
     opacity:40%;
